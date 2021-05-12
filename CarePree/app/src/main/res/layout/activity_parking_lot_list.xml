@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:visibility="visible"
+    android:weightSum="10"
+    tools:context=".ParkingLotList">
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="10dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:onClick="enterFilteringFromParkingLotList"
+            app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="인근주차장"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="5dp"
+            android:tag="03">
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:onClick="enterParkingLotInformation"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" 주차장 정보 (시간,거리,요금)"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="enterSearchResult"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="5dp"
+            android:tag="03">
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:onClick="enterParkingLotInformation"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" 주차장 정보 (시간,거리,요금)"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="enterSearchResult"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="5dp"
+            android:tag="03">
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:onClick="enterParkingLotInformation"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" 주차장 정보 (시간,거리,요금)"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="enterSearchResult"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingBottom="5dp"
+            android:tag="03">
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:onClick="enterParkingLotInformation"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" 주차장 정보 (시간,거리,요금)"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="enterSearchResult"
+                app:srcCompat="@drawable/ic_home_black_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/favorites_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="enterFavorites"
+            app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+        <ImageView
+            android:id="@+id/main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="enterMain"
+            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+        <ImageView
+            android:id="@+id/settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="enterSettings"
+            app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    </LinearLayout>
+</LinearLayout>
