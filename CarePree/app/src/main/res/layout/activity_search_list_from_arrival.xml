@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="enterFilteringFromArrival"
     android:orientation="vertical"
     android:paddingLeft="8dp"
     android:paddingTop="8dp"
     android:paddingRight="8dp"
     android:paddingBottom="8dp"
     android:weightSum="10"
-    tools:context=".SearchList">
+    tools:context=".SearchListFromArrival">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +30,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="2"
             android:clickable="true"
-            android:onClick="enterFiltering"
+            android:onClick="enterFilteringFromArrival"
             app:srcCompat="@drawable/ic_dashboard_black_24dp" />
 
         <EditText
@@ -40,8 +41,8 @@
             android:layout_weight="6"
             android:ems="10"
             android:inputType="textPersonName"
-            android:tag="1"
-            android:text="보신각" />
+            android:tag="3"
+            android:text="@string/input_parking_lot_name" />
 
         <ImageView
             android:layout_width="1dp"
@@ -49,7 +50,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="2"
             android:clickable="true"
-            android:onClick="enterSearchResult"
+            android:onClick="enterSearchResultFromArrival"
             app:srcCompat="@drawable/ic_searchglass"
             tools:tint="#808080" />
 

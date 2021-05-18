@@ -10,7 +10,7 @@
     android:paddingRight="8dp"
     android:paddingBottom="8dp"
     android:weightSum="10"
-    tools:context=".SearchList">
+    tools:context=".SearchListFromDeparture">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,19 +29,19 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="2"
             android:clickable="true"
-            android:onClick="enterFiltering"
+            android:onClick="enterFilteringFromDeparture"
             app:srcCompat="@drawable/ic_dashboard_black_24dp" />
 
         <EditText
-            android:id="@+id/destination"
+            android:id="@+id/departureArea"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="6"
             android:ems="10"
             android:inputType="textPersonName"
-            android:tag="1"
-            android:text="보신각" />
+            android:tag="2"
+            android:text="@string/input_parking_lot_name" />
 
         <ImageView
             android:layout_width="1dp"
@@ -49,7 +49,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="2"
             android:clickable="true"
-            android:onClick="enterSearchResult"
+            android:onClick="enterSearchResultFromDeparture"
             app:srcCompat="@drawable/ic_searchglass"
             tools:tint="#808080" />
 

@@ -13,8 +13,10 @@
     android:weightSum="10"
     tools:context=".ParkingLotList">
 
+
+
     <LinearLayout
-        android:id="@+id/search"
+        android:id="@+id/destination"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -32,8 +34,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="2"
             android:onClick="enterFilteringFromParkingLotList"
-            app:srcCompat="@drawable/ic_filter"
-            tools:tint="#808080" />
+            app:srcCompat="@drawable/ic_dashboard_black_24dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -189,10 +190,9 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="40dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
+                android:layout_height="match_parent"
                 android:onClick="enterSearchResult"
-                app:srcCompat="@drawable/ic_getdirections" />
+                app:srcCompat="@drawable/ic_home_black_24dp" />
 
         </LinearLayout>
 
@@ -208,32 +208,57 @@
         android:paddingBottom="10dp"
         android:weightSum="3">
 
-        <ImageView
-            android:id="@+id/favorites_btn"
-            android:layout_width="35dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:onClick="enterFavorites"
-            app:srcCompat="@drawable/ic_favorites"
-            tools:tint="#808080" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/main_btn"
-            android:layout_width="35dp"
+            <ImageView
+                android:id="@+id/favorites_btn"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:onClick="enterFavorites"
+                app:srcCompat="@drawable/ic_favorites"
+                tools:tint="#808080" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:onClick="enterMain"
-            app:srcCompat="@drawable/ic_main"
-            tools:tint="#808080" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/settings_btn"
-            android:layout_width="35dp"
+            <ImageView
+                android:id="@+id/main_btn"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:onClick="enterMain"
+                app:srcCompat="@drawable/ic_main"
+                tools:tint="#808080" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:onClick="enterSettings"
-            app:srcCompat="@drawable/ic_settings"
-            tools:tint="#808080" />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/settings_btn"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:onClick="enterSettings"
+                app:srcCompat="@drawable/ic_settings"
+                tools:tint="#808080" />
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

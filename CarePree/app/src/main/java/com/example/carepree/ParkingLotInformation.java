@@ -17,17 +17,17 @@ public class ParkingLotInformation extends AppCompatActivity {
         // 공유 버튼 누르면 공유페이지뜨게하기 (정보공유페이지      - 누르면 그 어플 열려서 공유할 수 있게 하기)
     }
 
-    public void enterFavorites(View v){
+    public void enterFavorites(View v){ // 즐겨찾기로 이동
         Intent it = new Intent(this,Favorites.class);
         startActivity(it);
     }
 
-    public void enterMain(View v){
+    public void enterMain(View v){ // 메인 화면으로 이동
         Intent it = new Intent(this,NearParkingLotMain.class);
         startActivity(it);
     }
 
-    public void enterSettings(View v){
+    public void enterSettings(View v){ // 설정으로 이동
         Intent it = new Intent(this,Settings.class);
         startActivity(it);
     }

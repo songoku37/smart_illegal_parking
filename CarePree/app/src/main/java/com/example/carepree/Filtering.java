@@ -15,21 +15,21 @@ public class Filtering extends AppCompatActivity {
 
     }
 
-    public void enterSearchList(View v){
+    public void enterSearchList(View v){ // 검색화면으로 이동
         Intent it = new Intent(this,SearchList.class);
         startActivity(it);
     }
-    public void enterFavorites(View v){
+    public void enterFavorites(View v){ // 즐겨찾기로 이동
         Intent it = new Intent(this,Favorites.class);
         startActivity(it);
     }
 
-    public void enterMain(View v){
+    public void enterMain(View v){ // 메인으로 이동
         Intent it = new Intent(this,NearParkingLotMain.class);
         startActivity(it);
     }
 
-    public void enterSettings(View v){
+    public void enterSettings(View v){ // 설정으로 이동
         Intent it = new Intent(this,Settings.class);
         startActivity(it);
     }
