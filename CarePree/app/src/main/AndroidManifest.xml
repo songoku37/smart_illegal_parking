@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -17,7 +19,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePree">
-        <activity android:name=".FilteringFromParkingLotList"></activity>
+        <activity android:name=".SearchListFromArrival"></activity>
+        <activity android:name=".SearchListFromDeparture" />
+        <activity android:name=".FilteringFromParkingLotList" />
         <activity android:name=".Settings" />
         <activity android:name=".Favorites" />
         <activity android:name=".SearchResult" />

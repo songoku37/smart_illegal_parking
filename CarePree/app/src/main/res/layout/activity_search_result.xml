@@ -27,6 +27,7 @@
                 android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
+                android:onClick="swapDepartureWithDestination"
                 android:src="@drawable/ic_home_black_24dp" />
 
             <LinearLayout
@@ -37,21 +38,25 @@
                 android:paddingRight="8dp"
                 tools:layout_weight="0">
 
-                <EditText
-                    android:id="@+id/start_point"
+                <TextView
+                    android:id="@+id/departureArea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:gravity="center"
+                    android:onClick="enterSearchListFromDepature"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="출발지" />
 
-                <EditText
-                    android:id="@+id/end_point"
+                <TextView
+                    android:id="@+id/destination"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:gravity="center"
+                    android:onClick="enterSearchListFromArrival"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="도착지" />
 
             </LinearLayout>
 

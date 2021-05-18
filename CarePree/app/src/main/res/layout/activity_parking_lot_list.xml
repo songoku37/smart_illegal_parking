@@ -13,8 +13,10 @@
     android:weightSum="10"
     tools:context=".ParkingLotList">
 
+
+
     <LinearLayout
-        android:id="@+id/search"
+        android:id="@+id/destination"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"

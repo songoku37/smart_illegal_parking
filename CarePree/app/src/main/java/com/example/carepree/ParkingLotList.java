@@ -20,32 +20,32 @@ public class ParkingLotList extends AppCompatActivity {
     //- 현재위치로부터 가까운 거리순으로 정렬 현재GPS에서 주차장정보 GPS도착지 거리파악하는 메소드 이용하면 될듯
     //- 필터 적용하면 우선순위는 어떤 유형주차장 1번 2번 거리 or 돈
 
-    public void enterParkingLotInformation(View v){
+    public void enterParkingLotInformation(View v){ // 주차정보화면으로 이동
         Intent it = new Intent(this,ParkingLotInformation.class);
         startActivity(it);
     }
 
-    public void enterFilteringFromParkingLotList(View v){
+    public void enterFilteringFromParkingLotList(View v){ // 주차장 화면 리스트로 이동
         Intent it = new Intent(this,FilteringFromParkingLotList.class);
         startActivity(it);
     }
 
-    public void enterSearchResult(View v){
+    public void enterSearchResult(View v){ // 길찾기 화면으로 이동
         Intent it = new Intent(this,SearchResult.class);
         startActivity(it);
     }
 
-    public void enterFavorites(View v){
+    public void enterFavorites(View v){ // 즐겨찾기로 이동
         Intent it = new Intent(this,Favorites.class);
         startActivity(it);
     }
 
-    public void enterMain(View v){
+    public void enterMain(View v){ // 메인으로 이동
         Intent it = new Intent(this,NearParkingLotMain.class);
         startActivity(it);
     }
 
-    public void enterSettings(View v){
+    public void enterSettings(View v){ // 설정으로 이동
         Intent it = new Intent(this,Settings.class);
         startActivity(it);
     }
