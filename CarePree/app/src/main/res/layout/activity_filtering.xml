@@ -235,29 +235,30 @@
         android:paddingBottom="10dp"
         android:weightSum="3">
 
+
         <ImageView
             android:id="@+id/favorites_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="enterFavorites"
-            app:srcCompat="@drawable/ic_notifications_black_24dp" />
+            app:srcCompat="@drawable/ic_favorites" />
 
         <ImageView
             android:id="@+id/main_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="enterMain"
-            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+            app:srcCompat="@drawable/ic_main" />
 
         <ImageView
             android:id="@+id/settings_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="enterSettings"
-            app:srcCompat="@android:drawable/ic_menu_manage" />
+            app:srcCompat="@drawable/ic_settings" />
 
     </LinearLayout>
 
