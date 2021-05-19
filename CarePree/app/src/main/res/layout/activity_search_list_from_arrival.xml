@@ -24,35 +24,57 @@
         android:paddingBottom="10dp"
         android:weightSum="10">
 
-        <ImageView
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="2"
-            android:clickable="true"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
             android:onClick="enterFilteringFromArrival"
-            app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/destination"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="6"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:tag="3"
-            android:text="@string/input_parking_lot_name" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/img"
+                app:srcCompat="@drawable/img" />
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="2"
-            android:clickable="true"
-            android:onClick="enterSearchResultFromArrival"
-            app:srcCompat="@drawable/ic_searchglass"
-            tools:tint="#808080" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:tag="3"
+                android:text="@string/input_parking_lot_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:onClick="enterSearchResultFromArrival"
+                app:srcCompat="@drawable/ic_searchglass"
+                tools:tint="#808080" />
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -12,6 +12,8 @@ public class ParkingLotList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parking_lot_list);
+
+
     }
 
     //- 끝에 걸쳐서 내리면 메인페이지 나오도록

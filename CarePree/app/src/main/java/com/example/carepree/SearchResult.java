@@ -2,13 +2,16 @@ package com.example.carepree;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.location.Location;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.skt.Tmap.TMapData;
+import com.skt.Tmap.TMapGpsManager;
 import com.skt.Tmap.TMapPOIItem;
 import com.skt.Tmap.TMapPoint;
 import com.skt.Tmap.TMapPolyLine;
@@ -26,12 +30,13 @@ import org.xml.sax.SAXException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 import javax.xml.parsers.ParserConfigurationException;
 
 import static android.graphics.BitmapFactory.decodeResource;
 
-public class SearchResult extends AppCompatActivity {
+public class SearchResult extends AppCompatActivity implements TMapGpsManager.onLocationChangedCallback{
 
     TextView destination;
     TextView departureArea;
@@ -50,6 +55,7 @@ public class SearchResult extends AppCompatActivity {
     String tempId;
     String destinationPOIName;
     String departurePOIName ;
+    String currentAddress;
 
 
     @Override
@@ -61,6 +67,7 @@ public class SearchResult extends AppCompatActivity {
 
         it = getIntent();
         tag = it.getStringExtra("it_tag"); // 어떤 페이지로 넘어왔는지 알기 위해 tag값을 씀
+        currentAddress = it.getStringExtra("currentAddress");
 
         SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
         // onPause에 저장되어 있는 값을 가져오기 위한 객체
@@ -75,12 +82,30 @@ public class SearchResult extends AppCompatActivity {
             }
         }
 
+
+        // tMap 기본셋팅
         tMapView = new TMapView(this); // tMapView 객체 생성 (지도를 쓰기 위한)
         tMapView.setHttpsMode(true); // https 모드 허용해야 지도 뜸
         tMapView.setSKTMapApiKey("l7xxcffd8a912983400d81c75a095eb912e8"); // tMapView 기본셋팅 (앱키)
 
+        // tMap 옵션추가
         tMapView.setSightVisible(true); // 어느 방향을 보고 있는지 보여줌
         tMapView.setCompassMode(true); // 자기가 바라보는 방향으로 돌아가는 나침판표시
+        tMapView.setIconVisibility(true); //현재위치로 아이콘 표시 여부
+        tMapView.setZoomLevel(17);
+
+        // GPS 사용 준비
+        TMapGpsManager tMapGPS = new TMapGpsManager(this);
+
+        // TMap GPS 설정
+        tMapGPS.setMinTime(1); // 변경 인식시간
+        tMapGPS.setMinDistance(10);
+        tMapGPS.setProvider(tMapGPS.NETWORK_PROVIDER); // 네트워크 방법
+        //tMapGPS.setProvider(tMapGPS.GPS_PROVIDER); // GPS방법 [위성기반] (작동 안 함)
+
+        // GPS시작
+        tMapGPS.OpenGps();
+
 
 //        new FirstMapAsynTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR); // exeucteOnExecutor를 쓰면 동시다발적으로 일어난다
         new FirstMapAsynTask().execute(); // execute를 쓰면 순차적으로 비동기가 실행 됨
@@ -167,6 +192,12 @@ public class SearchResult extends AppCompatActivity {
         departureArea.setText(departureAreaName);
     }
 
+    @Override
+    public void onLocationChange(Location location) {
+        // 이걸 써야 처음 좌표와 다른위치로 이동했다는걸 인식해 그 좌표를 가져와서 거기로 이동(콜백 메소드)
+        tMapView.setLocationPoint(location.getLongitude(), location.getLatitude()); // 서클을 현재 위치 중심좌표로 이동(좌표)
+        tMapView.setCenterPoint(location.getLongitude(), location.getLatitude()); // 서클이 있는 곳으로 이동(현재위치로이동)
+    }
 
 
     class FirstMapAsynTask extends AsyncTask<Void,Void,Void>{ // 지도 출력과 자동 길찾기를 해준다
@@ -191,8 +222,8 @@ public class SearchResult extends AppCompatActivity {
 
                 if(departureArea == null){
                     departureArea = findViewById(R.id.departureArea);
-                    departureArea.setText("명동성당"); // default 출발지 값 :여기에는 현 위치가 들어가면 된다.
-                }
+                    departureArea.setText(currentAddress); // default 출발지 값 :여기에는 현 위치가 들어가면 된다.
+                }   // 현 위치의 값을 받아와 현 위치에 뿌리기
 
             } else if (tag.equals("2")) {
                 destination = findViewById(R.id.destination);
@@ -241,7 +272,6 @@ public class SearchResult extends AppCompatActivity {
 
                 String point = null;
                 ArrayList poiItem = null;
-                Log.e("etw","wer");
 
                 try {
                     poiItem = tmapdata.findTitlePOI(POIPoint[0]);

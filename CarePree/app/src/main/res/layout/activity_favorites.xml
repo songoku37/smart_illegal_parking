@@ -13,20 +13,63 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/img"
+                app:srcCompat="@drawable/img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         tools:context=".ui.dashboard.DashboardFragment">
 
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:src="@drawable/img" />
-
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/search_view"
+        <TextView
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:iconifiedByDefault="false"
-            app:queryHint="검색어를 입력하시오" />
+            android:gravity="center_horizontal"
+            android:text="주차장 정보\n(시간,거리,요금)"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
     <LinearLayout
@@ -45,6 +88,7 @@
             android:gravity="center_horizontal"
             android:text="주차장 정보\n(시간,거리,요금)"
             android:textAlignment="center"
+            android:textSize="8sp"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -86,35 +130,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:paddingTop="10dp"
+        android:layout_weight="3.5"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
         android:paddingBottom="10dp"
-        tools:context=".ui.dashboard.DashboardFragment">
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="right"
-            android:gravity="center_horizontal"
-            android:text="주차장 정보\n(시간,거리,요금)"
-            android:textAlignment="center"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.155" />
-    </LinearLayout>
+        android:weightSum="3"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@drawable/borderline"
         android:orientation="horizontal"
         android:paddingTop="6dp"
         android:paddingBottom="10dp"
@@ -131,7 +158,7 @@
             <ImageView
                 android:id="@+id/favorites_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:layout_weight="0"
                 android:onClick="enterFavorites"
                 app:srcCompat="@drawable/ic_favorites"
@@ -149,7 +176,7 @@
             <ImageView
                 android:id="@+id/main_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:onClick="enterMain"
                 app:srcCompat="@drawable/ic_main"
                 tools:tint="#808080" />
