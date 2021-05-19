@@ -51,7 +51,8 @@
             android:layout_weight="2"
             android:clickable="true"
             android:onClick="enterSearchResultFromArrival"
-            app:srcCompat="@android:drawable/ic_media_ff" />
+            app:srcCompat="@drawable/ic_searchglass"
+            tools:tint="#808080" />
 
     </LinearLayout>
 
