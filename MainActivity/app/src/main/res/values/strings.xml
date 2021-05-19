@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Tmap Test</string>
+    <string name="button_01" translatable="false">Search </string>
+    <string name="Text_01" translatable="false" > Please your write text here.</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tmap 테스트</string>
+    <string name="button_01">검색</string>
+    <string name="Text_01" translatable="false"> 주소를 검색해 주세요. </string>
+</resources>
