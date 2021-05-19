@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
     android:weightSum="10"
     tools:context=".FilteringFromParkingLotList">
 
@@ -230,6 +228,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@drawable/borderline"
         android:orientation="horizontal"
         android:paddingTop="6dp"
         android:paddingBottom="10dp"
@@ -246,7 +245,7 @@
             <ImageView
                 android:id="@+id/favorites_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:layout_weight="0"
                 android:onClick="enterFavorites"
                 app:srcCompat="@drawable/ic_favorites"
@@ -264,7 +263,7 @@
             <ImageView
                 android:id="@+id/main_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:onClick="enterMain"
                 app:srcCompat="@drawable/ic_main"
                 tools:tint="#808080" />
@@ -281,7 +280,7 @@
             <ImageView
                 android:id="@+id/settings_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:onClick="enterSettings"
                 app:srcCompat="@drawable/ic_settings"
                 tools:tint="#808080" />

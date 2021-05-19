@@ -2,17 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="8dp"
-    android:paddingTop="8dp"
-    android:paddingRight="8dp"
-    android:paddingBottom="8dp"
     android:visibility="visible"
     android:weightSum="10"
     tools:context=".ParkingLotList">
-
 
 
     <LinearLayout
@@ -86,7 +81,9 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:onClick="enterSearchResult"
-                app:srcCompat="@drawable/ic_home_black_24dp" />
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:srcCompat="@drawable/ic_getdirections" />
 
         </LinearLayout>
 
@@ -121,7 +118,9 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:onClick="enterSearchResult"
-                app:srcCompat="@drawable/ic_home_black_24dp" />
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:srcCompat="@drawable/ic_getdirections" />
 
         </LinearLayout>
 
@@ -156,7 +155,9 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:onClick="enterSearchResult"
-                app:srcCompat="@drawable/ic_home_black_24dp" />
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:srcCompat="@drawable/ic_getdirections" />
 
         </LinearLayout>
 
@@ -192,7 +193,9 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:onClick="enterSearchResult"
-                app:srcCompat="@drawable/ic_home_black_24dp" />
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                app:srcCompat="@drawable/ic_getdirections" />
 
         </LinearLayout>
 
@@ -203,6 +206,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@drawable/borderline"
         android:orientation="horizontal"
         android:paddingTop="6dp"
         android:paddingBottom="10dp"
@@ -219,7 +223,7 @@
             <ImageView
                 android:id="@+id/favorites_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:layout_weight="0"
                 android:onClick="enterFavorites"
                 app:srcCompat="@drawable/ic_favorites"
@@ -237,7 +241,7 @@
             <ImageView
                 android:id="@+id/main_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:onClick="enterMain"
                 app:srcCompat="@drawable/ic_main"
                 tools:tint="#808080" />
@@ -254,7 +258,7 @@
             <ImageView
                 android:id="@+id/settings_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:onClick="enterSettings"
                 app:srcCompat="@drawable/ic_settings"
                 tools:tint="#808080" />
