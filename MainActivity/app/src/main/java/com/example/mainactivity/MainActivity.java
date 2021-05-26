@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.skt.Tmap.TMapGpsManager;
@@ -50,8 +51,7 @@ public class MainActivity extends AppCompatActivity implements TMapGpsManager.on
         tMapView.setMarkerRotate(true);                     // 나침반 회전시 마커 이미지를 같이 회전시킬지 여부 설정
         tMapView.setTrafficInfoActive(true);                // 교통정보 표출여부 설정
 
-        // 임의로 넣은 현재 좌표값 -> 핸드폰 gps 연결시 이거만 없애면 됨
-        tMapView.setLocationPoint(126.65665468472191, 37.60196573254516);
+
 
         /*
         //화면중심 좌표의 위도,경도 반환
@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity implements TMapGpsManager.on
         tMapGPS = new TMapGpsManager(this);
 
         // TMap GPS 설정
-        tMapGPS.setMinTime(1000);
-        tMapGPS.setMinDistance(10);
+        tMapGPS.setMinTime(1000);   //1000 = 1초
+        tMapGPS.setMinDistance(1);  //m단위로 위치 변경시 GPS불러오기
         tMapGPS.setProvider(tMapGPS.NETWORK_PROVIDER); // 네트워크 방법
         //tMapGPS.setProvider(tMapGPS.GPS_PROVIDER); // GPS방법
 
@@ -88,5 +88,9 @@ public class MainActivity extends AppCompatActivity implements TMapGpsManager.on
         tMapView.setCenterPoint(location.getLongitude(), location.getLatitude());
     }
 
+    //내 위치로 다시가는 버튼
+    public void moveMyLocation(View view) {
+        tMapView.setTrackingMode(true);
+    }
 }
 
