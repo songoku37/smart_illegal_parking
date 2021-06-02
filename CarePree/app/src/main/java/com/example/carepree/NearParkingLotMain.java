@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.skt.Tmap.TMapData;
 import com.skt.Tmap.TMapGpsManager;
@@ -18,6 +19,7 @@ import com.skt.Tmap.TMapView;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -30,15 +32,17 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
     TMapData tmapdata;
     double currentLongitude;
     double currentLatitude;
+    TMapGpsManager tMapGPS;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_near_parking_lot_main);
 
-
         // GPS 사용 준비
-        TMapGpsManager tMapGPS = new TMapGpsManager(this);
+        tMapGPS = new TMapGpsManager(this);
+
 
         // TMap GPS 설정
         tMapGPS.setMinTime(1); // 변경 인식시간
@@ -49,14 +53,14 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         // GPS시작
         tMapGPS.OpenGps();
 
-
-
-        LinearLayout linearLayoutTmap = (LinearLayout) findViewById(R.id.map);
-
-         // tMap 기본셋팅
+        // tMap 기본셋팅
         tMapView = new TMapView(this); // tMapView 객체 생성 (지도를 쓰기 위한)
         tMapView.setHttpsMode(true); // https 모드 허용해야 지도 뜸
         tMapView.setSKTMapApiKey("l7xxcffd8a912983400d81c75a095eb912e8"); // tMapView 기본셋팅 (앱키)
+
+
+
+        LinearLayout linearLayoutTmap = (LinearLayout) findViewById(R.id.map);
 
         // tMap 옵션추가
         tMapView.setSightVisible(true); // 어느 방향을 보고 있는지 보여줌
@@ -67,20 +71,35 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
 
         linearLayoutTmap.addView(tMapView);
 
-        new GettingCurrentPOI().execute();
+        new GettingCurrentPOI().execute(); // 위도 경도값을 받아온거를 주소로저장한다
+
+
 
     }
 
     public void enterSearchList(View v){ // 검색화면으로 이동
-        Intent it = new Intent(this,SearchList.class);
-        it.putExtra("currentAddress",currentAddress);
-        Log.e("wef","current"+currentAddress);
-        startActivity(it);
+        if (currentAddress==null){
+            Toast.makeText(this, "현재 위치를 받아오고 있습니다.", Toast.LENGTH_SHORT).show();
+            new GettingCurrentPOI().execute();
+        }else {
+            Intent it = new Intent(this,SearchList.class);
+            it.putExtra("currentAddress",currentAddress);
+            startActivity(it);
+        }
     }
 
     public void enterParkingLotList(View v){ // 추자장리스트로 이동
         Intent it = new Intent(this,ParkingLotList.class);
         startActivity(it);
+//        if (currentAddress==null){
+//            Toast.makeText(this, "현재 위치를 받아오고 있습니다.", Toast.LENGTH_SHORT).show();
+//            new GettingCurrentPOI().execute();
+//        }else {
+//            Intent it = new Intent(this,ParkingLotList.class);
+//            it.putExtra("currentLatitude",currentLatitude);
+//            it.putExtra("currentLongitude",currentLongitude);
+//            startActivity(it);
+//        }
     }
 
     public void enterFavorites(View v){ // 즐겨찾기로 이동
@@ -108,27 +127,29 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         currentLongitude = tpoint.getLongitude();
         tmapdata = new TMapData();
 
-
     }
+
+
 
     class GettingCurrentPOI extends AsyncTask<Void,Void,Void>{
 
         @Override
         protected Void doInBackground(Void... voids) {
-            try {
-                TimeUnit.SECONDS.sleep(3);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
             try {
                 currentAddress = tmapdata.convertGpsToAddress(currentLatitude, currentLongitude);
+                // 위경도를 주소로 바꿔서 가져오기
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ParserConfigurationException e) {
                 e.printStackTrace();
             } catch (SAXException e) {
                 e.printStackTrace();
+            } catch (NullPointerException e){
+
             }
+
+
             return null;
         }
     }

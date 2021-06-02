@@ -55,8 +55,7 @@
                 android:layout_weight="2"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:tag="1"
-                android:text="보신각" />
+                android:tag="1" />
         </LinearLayout>
 
         <LinearLayout

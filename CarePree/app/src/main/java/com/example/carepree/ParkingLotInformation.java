@@ -13,8 +13,6 @@ public class ParkingLotInformation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parking_lot_information);
 
-        // 주차장정보페이지	- 공공데이터에서 파싱한 거 뿌리기
-        // 공유 버튼 누르면 공유페이지뜨게하기 (정보공유페이지      - 누르면 그 어플 열려서 공유할 수 있게 하기)
     }
 
     public void enterFavorites(View v){ // 즐겨찾기로 이동

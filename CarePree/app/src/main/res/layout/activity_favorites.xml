@@ -41,8 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
 
         </LinearLayout>
 
@@ -193,7 +192,7 @@
             <ImageView
                 android:id="@+id/settings_btn"
                 android:layout_width="54dp"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:onClick="enterSettings"
                 app:srcCompat="@drawable/ic_settings"
                 tools:tint="#808080" />

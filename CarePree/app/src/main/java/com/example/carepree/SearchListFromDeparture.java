@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class SearchListFromDeparture extends AppCompatActivity {
 
@@ -31,5 +32,10 @@ public class SearchListFromDeparture extends AppCompatActivity {
         it.putExtra("it_tag",tag);
         it.putExtra("departureAreaText",departureAreaText);
         startActivity(it);
+    }
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "여기에선 뒤로가기가 막혀있습니다.", Toast.LENGTH_SHORT).show();
+
     }
 }

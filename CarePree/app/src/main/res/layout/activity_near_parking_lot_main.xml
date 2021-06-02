@@ -22,9 +22,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
             android:gravity="center"
             android:text="현재위치"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -38,7 +40,7 @@
         android:tag="03" />
 
     <LinearLayout
-        android:id="@+id/information04"
+        android:id="@+id/information"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -63,7 +65,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="   현 위치 근처 주차장 정보 나열하기"
+                android:gravity="center"
+                android:text="근처 주차장 목록"
                 android:textSize="25sp"
                 android:textStyle="bold" />
         </LinearLayout>

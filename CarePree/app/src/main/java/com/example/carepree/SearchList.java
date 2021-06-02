@@ -19,7 +19,7 @@ public class SearchList extends AppCompatActivity {
         setContentView(R.layout.activity_search_list);
         Intent it = getIntent();
         currentAddress = it.getStringExtra("currentAddress");
-        Log.e("너의 이름은?" , "뭐냐"  + currentAddress);
+
         // 검색란엔 현재위치가 디폴트값
         // 최근검색이 밑으로 쭉 나오도록
         // 길찾기 누르면 그 GPS값이나 이름을 SearchResult에 넘긴다

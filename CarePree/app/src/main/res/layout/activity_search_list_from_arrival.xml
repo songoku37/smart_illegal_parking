@@ -55,8 +55,7 @@
                 android:layout_weight="6"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:tag="3"
-                android:text="@string/input_parking_lot_name" />
+                android:tag="3" />
         </LinearLayout>
 
         <LinearLayout

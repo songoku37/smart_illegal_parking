@@ -28,7 +28,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/information04"
+        android:id="@+id/information"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
@@ -42,72 +42,7 @@
             android:layout_weight="2"
             android:orientation="vertical"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="주차장 이름 : OO 주차장"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="주차장 구분: 공영 | 주차장 유형: 노상"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="운영요일: 평일 + 토요일 + 공휴일"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="요금: 유료"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="기본 요금: 600원 | 기본 주차시간: 10분"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="1일 주차권: 6000원 | 월 정기권: 40000원"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="주차장 전화번호: 123-456-7890"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                tools:textSize="20sp" />
-
-        </LinearLayout>
+            android:paddingRight="8dp"/>
 
     </LinearLayout>
 

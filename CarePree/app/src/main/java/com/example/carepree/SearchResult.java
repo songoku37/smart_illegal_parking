@@ -52,7 +52,7 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
     String endPoint;
     String tempDepartureArea;
     String tempDestination;
-    String tempId;
+    String tempId = "SKT타워";
     String destinationPOIName;
     String departurePOIName ;
     String currentAddress;
@@ -64,6 +64,17 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_result);
 
+        // GPS 사용 준비
+        TMapGpsManager tMapGPS = new TMapGpsManager(this);
+
+        // TMap GPS 설정
+        tMapGPS.setMinTime(1); // 변경 인식시간
+        tMapGPS.setMinDistance(1);
+        tMapGPS.setProvider(tMapGPS.NETWORK_PROVIDER); // 네트워크 방법
+        //tMapGPS.setProvider(tMapGPS.GPS_PROVIDER); // GPS방법 [위성기반] (작동 안 함)
+
+        // GPS시작
+        tMapGPS.OpenGps();
 
         it = getIntent();
         tag = it.getStringExtra("it_tag"); // 어떤 페이지로 넘어왔는지 알기 위해 tag값을 씀
@@ -94,18 +105,10 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
         tMapView.setIconVisibility(true); //현재위치로 아이콘 표시 여부
         tMapView.setZoomLevel(17);
 
-        // GPS 사용 준비
-        TMapGpsManager tMapGPS = new TMapGpsManager(this);
 
-        // TMap GPS 설정
-        tMapGPS.setMinTime(1); // 변경 인식시간
-        tMapGPS.setMinDistance(10);
-        tMapGPS.setProvider(tMapGPS.NETWORK_PROVIDER); // 네트워크 방법
-        //tMapGPS.setProvider(tMapGPS.GPS_PROVIDER); // GPS방법 [위성기반] (작동 안 함)
 
-        // GPS시작
-        tMapGPS.OpenGps();
 
+        new POIsearch().execute("SKT타워");
 
 //        new FirstMapAsynTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR); // exeucteOnExecutor를 쓰면 동시다발적으로 일어난다
         new FirstMapAsynTask().execute(); // execute를 쓰면 순차적으로 비동기가 실행 됨
@@ -121,7 +124,6 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
 
 
-
     }
     @Override
     protected void onPause() { // 액티비티 전환하기를 누르면 onPause가 콜백 됨
@@ -130,7 +132,7 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
         SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
         // 객체 이름은 불러올 때 사용되는 이름과 동일한 이름을 사용해야한다.
         SharedPreferences.Editor editor = pref.edit();
-        // 필요한 정보를 저장하 수 있는 editor 생성
+        // 필요한 정보를 저장할 수 있는 editor 생성
 
         if(tempId.equals("departureArea")){ // 출발지 검색화면으로 넘어가기 전에 도착지 정보를 저장
             tempDestination = destination.getText().toString();
@@ -208,6 +210,7 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
         @Override
         protected void onPostExecute(Void aVoid) {
+
             new POIPointAsynTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,destinationPOIName,departurePOIName);
             super.onPostExecute(aVoid);
         }
@@ -299,6 +302,8 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
                     e.printStackTrace();
                 } catch (SAXException e) {
                     e.printStackTrace();
+                } catch (NullPointerException e){
+                    new POIPointAsynTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,destinationPOIName,departurePOIName);
                 }
 
 
@@ -324,13 +329,13 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
                     TMapPolyLine tMapPolyLine = new TMapData().findPathData(tMapPointStart, tMapPointEnd);
                     // 경로를 만드는 tMapPolyLine 객체 생성과 출발지와 도착지 설정
-                    tMapPolyLine.setLineColor(Color.BLUE); // 경로 색상
-                    tMapPolyLine.setLineWidth(2); // 경로 선의 두께
+                    tMapPolyLine.setLineColor(Color.RED); // 경로 색상
+                    tMapPolyLine.setLineWidth(1); // 경로 선의 두께
                     TmapViews[0].addTMapPolyLine("Line1", tMapPolyLine); // 경로를 그린다
-                    TmapViews[0].addTMapPath(tMapPolyLine); // 이거 안 쓰면 밑에 아이콘 사용 불가
-                    Bitmap start = decodeResource(getResources(),R.drawable.start); // 출발지 아이콘
-                    Bitmap end = decodeResource(getResources(),R.drawable.end); // 도착지 아이콘
-                    TmapViews[0].setTMapPathIcon(start, end); // 출발 도착 아이콘 설정
+//                    TmapViews[0].addTMapPath(tMapPolyLine); // 이거 안 쓰면 밑에 아이콘 사용 불가
+//                    Bitmap start = decodeResource(getResources(),R.drawable.start); // 출발지 아이콘
+//                    Bitmap end = decodeResource(getResources(),R.drawable.end); // 도착지 아이콘
+//                    TmapViews[0].setTMapPathIcon(start, end); // 출발 도착 아이콘 설정
 
                 }catch(Exception e) {
                     e.printStackTrace();
@@ -356,7 +361,8 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
             @Override
             protected TMapData doInBackground(String... address_name) {
                 TMapData tmapdata = new TMapData();
-                tmapdata.findAllPOI(address_name[0], new TMapData.FindAllPOIListenerCallback() {
+
+                  tmapdata.findAllPOI(address_name[0], new TMapData.FindAllPOIListenerCallback() {
                     @Override // 왜 Override를 쓰는지 모르겠음 왜 이런형식이냐면 TMapData객체에 인터페이스를 매개변수로 받아서 new를 쓰는건가
                     public void onFindAllPOI(ArrayList poiItem) {
                         for(int i = 0; i < poiItem.size(); i++) {
