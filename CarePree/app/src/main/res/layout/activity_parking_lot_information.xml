@@ -12,8 +12,8 @@
     <LinearLayout
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_height="169dp"
+        android:layout_weight="2"
         android:clickable="true"
         android:orientation="horizontal"
         android:tag="03">
@@ -21,31 +21,25 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="159dp"
             android:layout_weight="2"
             android:text="주차장사진들어갈곳" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/information"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:tag="03">
+        android:layout_weight="7">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clickable="true"
             android:orientation="vertical"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"/>
-
-    </LinearLayout>
-
+            android:tag="03" />
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/bottom"

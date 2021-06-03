@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -137,6 +138,7 @@ public class ParkingLotList extends AppCompatActivity {
             while(iter < parkingArray.size()){
 
 
+
                 String dyanmicParkingName = parkingArray.get(iter).getPrkplceNm();
 
                 LinearLayout parkingList = (LinearLayout)findViewById(R.id.parkingList); // ParkingList에 정보를 받아옴 parkingListInner를 그 안에 넣기 위해
@@ -149,11 +151,25 @@ public class ParkingLotList extends AppCompatActivity {
 
 
                 // 주차장이미지랑 주차장이름이 들어갈 레이아웃
+
+                String tag = String.valueOf(iter);
+
                 LinearLayout parkingListInnerInner = new LinearLayout(ParkingLotList.this);
                 parkingListInnerInner.setOrientation(LinearLayout.VERTICAL);
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(1200 ,LinearLayout.LayoutParams.WRAP_CONTENT);
                 parkingListInnerInner.setGravity(Gravity.CENTER); // 가운데 정렬
                 parkingListInnerInner.setLayoutParams(params);
+                parkingListInnerInner.setTag(tag); // 태그 설정
+
+                parkingListInnerInner.setOnClickListener(new View.OnClickListener() { // onClick 생성해 주차장정보를 넘김
+                    public void onClick(View v) {
+                        String clickTagNumber = (String)parkingListInnerInner.getTag(); // Tag 값으로 ArrayList에 몇번째인지 파악한다.
+                        int tagNumber = Integer.parseInt(clickTagNumber); // String형태인 Tag값을 Index값을 지정해주기 위해서 사용
+                        Intent it = new Intent(ParkingLotList.this,ParkingLotInformation.class);
+                        it.putExtra("parkingInformationsArrays", parkingArray.get(tagNumber)); // 해당 주차장에 대한 정보가 들어간 ArrayList를 넘김
+                        startActivity(it);
+                    }
+                });
 
 
                 // 주차장 이미지
@@ -236,8 +252,8 @@ public class ParkingLotList extends AppCompatActivity {
 
                 urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=JrZ6ykYHDilgfV9JOmu1eMgNO1%2BkLB0mjCSJSmy%2Fm%2BkS3D2kzPKHJxy0Q4%2B%2FGkxX8S2U3F4HUaPU7d6uoqqe6w%3D%3D"); /*Service Key*/
                 urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode(Integer.toString(pagesNo[0]), "UTF-8"));  // 페이지 번호
-//                urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("30", "UTF-8"));  // 페이지 번호
-                urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("400", "UTF-8")); // 한 페이지 결과 수
+//                urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("400", "UTF-8")); // 한 페이지 결과 수
+                urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("50", "UTF-8")); // 한 페이지 결과 수
                 urlBuilder.append("&" + URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode("json", "UTF-8")); // XML/JSON 여부
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();

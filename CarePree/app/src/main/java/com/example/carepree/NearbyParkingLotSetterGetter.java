@@ -1,6 +1,8 @@
 package com.example.carepree;
 
-public class NearbyParkingLotSetterGetter {
+import java.io.Serializable;
+
+public class NearbyParkingLotSetterGetter implements Serializable {
 
     String prkplceNm;  // 주차장명
     String prkplceSe; // 주차장 구분
