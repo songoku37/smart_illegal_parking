@@ -10,11 +10,12 @@
     android:paddingRight="8dp"
     android:paddingBottom="8dp"
     android:weightSum="10"
-    tools:context=".SearchListFromDeparture">
+    tools:context=".DepartureSearchList">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="17dp"
         android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingLeft="8dp"
@@ -54,8 +55,7 @@
                 android:layout_weight="6"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:tag="2"
-                android:text="@string/input_parking_lot_name" />
+                android:tag="2" />
         </LinearLayout>
 
         <LinearLayout

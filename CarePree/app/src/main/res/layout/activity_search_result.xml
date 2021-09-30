@@ -12,66 +12,73 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1.4"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#EAEBEC"
             android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-
-            <ImageView
-                android:id="@+id/change_route_btn"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center_vertical"
-                android:onClick="swapDepartureWithDestination"
-                android:src="@drawable/ic_change"
-                tools:tint="#808080" />
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:weightSum="10">
 
             <LinearLayout
-                android:layout_width="282dp"
+                android:layout_width="321dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="5"
+                android:background="@drawable/radius"
+                android:elevation="5dp"
                 android:gravity="bottom|center_horizontal"
-                android:orientation="vertical"
-                android:paddingRight="8dp"
-                tools:layout_weight="0">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/departureArea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/radius"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
-                    android:onClick="enterSearchListFromDepature"
+                    android:onClick="enterDepartureSearchList"
                     android:paddingTop="7dp"
                     android:paddingBottom="7dp"
-                    android:text="출발지" />
+                    android:text="출발지"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/destination"
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+
+                <TextView
+                    android:id="@+id/destinationArea"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
-                    android:onClick="enterSearchListFromArrival"
+                    android:onClick="enterDestinationSearchList"
                     android:paddingTop="7dp"
                     android:paddingBottom="7dp"
-                    android:text="도착지" />
+                    android:text="도착지"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/search_btn"
-                android:layout_width="1dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                android:clickable="false"
-                android:onClick="enterSearchResult"
-                app:srcCompat="@drawable/ic_searchglass"
-                tools:ignore="OnClick"
-                tools:tint="#808080" />
+                android:id="@+id/tmapNavi"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:onClick="enterTmapNavi"
+                android:text="길찾기"
+                app:srcCompat="@drawable/tmap_navi" />
+
 
         </LinearLayout>
 
@@ -81,8 +88,8 @@
         android:id="@+id/search_result_map"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7.5"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_weight="7.7"
+        android:orientation="horizontal" />
 
     <LinearLayout
         android:id="@+id/bottom"

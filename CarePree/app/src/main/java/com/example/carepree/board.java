@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class board extends AppCompatActivity {
+public class Board extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

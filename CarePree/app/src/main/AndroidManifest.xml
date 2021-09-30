@@ -18,13 +18,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CarePree">
-        <activity android:name=".postpage"></activity>
-        <activity android:name=".editpost" />
-        <activity android:name=".writepost" />
-        <activity android:name=".board" />
-        <activity android:name=".SearchListFromArrival" />
-        <activity android:name=".SearchListFromDeparture" />
+        android:theme="@style/Theme.CarePree"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TmapNavi"></activity>
+        <activity android:name=".DestinationSearchListFrom" />
+        <activity android:name=".DepartureSearchList" />
         <activity android:name=".FilteringFromParkingLotList" />
         <activity android:name=".Settings" />
         <activity android:name=".Favorites" />
@@ -41,6 +39,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
+
+        <queries>
+            <package android:name="com.skt.skaf.l001mtm091" />
+            <package android:name="com.skt.tmap.ku" />
+        </queries>
 
 </manifest>

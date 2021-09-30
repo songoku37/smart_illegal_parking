@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class writepost extends AppCompatActivity {
+public class PostWriting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

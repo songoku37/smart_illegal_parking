@@ -1,32 +1,61 @@
+/*
+
+@ breif  : 도착지를 검색하는 페이지
+@ detail : 도착지를 검색하는 페이지
+@ why    : 도착지를 입력하기 위해 만들었다.
+
+ */
+
 package com.example.carepree;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
 public class SearchList extends AppCompatActivity {
 
     EditText destination;
-    String destinationText;
+
+    String destinationAddress;
     String currentAddress;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_list);
+
+        // 현재위치를 받아온다
+        getAddress();
+
+    }
+
+     /*
+        함수명   : getAddress
+        간략     : 현재 주소를 받아옵니다.
+        상세     : 현재 주소를 받아옵니다.
+        작성자   : 이성재
+        날짜     : 2021.06.06
+        why      : 현재위치를 다시 다음 액티비티에 넘기기 위해 받아왔습니다.
+     */
+
+    public void getAddress(){
         Intent it = getIntent();
         currentAddress = it.getStringExtra("currentAddress");
-        Log.e("너의 이름은?" , "뭐냐"  + currentAddress);
-        // 검색란엔 현재위치가 디폴트값
-        // 최근검색이 밑으로 쭉 나오도록
-        // 길찾기 누르면 그 GPS값이나 이름을 SearchResult에 넘긴다
-        // 그리고 주차장이라고 치면 무조건 가까운 순으로 정렬 가격은 옆에 살짝 적어두기
-        //- 필터 적용하면 우선순위는 어떤 유형주차장 + 운영요일 1번 2번은 거리 or 돈
-        // 즐겨찾기 누르면 그 정보가 즐겨찾기에 추가
     }
+
+     /*
+        함수명   :
+        간략     :
+        상세     :
+        작성자   :
+        날짜     :
+        return   :
+        param    :
+        why      :
+     */
 
     public void enterFiltering(View v){ // 필터링 화면으로 이동
 
@@ -34,15 +63,28 @@ public class SearchList extends AppCompatActivity {
         startActivity(it);
     }
 
+      /*
+        함수명   : enterSearchResult
+        간략     : SearchResult 페이지로 넘어갑니다.
+        상세     : SearchResult 페이지로 정보랑 같이 넘깁니다.
+        작성자   : 이성재
+        날짜     : 2021.06.06
+        param    : v : 클릭한 뷰
+        why      : 도착지 정보와 현재 위치정보를 출발지와 도착지에 뿌리기 위해 같이 넘기기 위해 만들었습니다.
+     */
+
     public void enterSearchResult(View v){ // 길찾기 화면으로 이동
 
-        destination = (EditText)findViewById(R.id.destination);
-        destinationText = destination.getText().toString();
-        String tag = (String) destination.getTag(); // 태그로 어디에서 왔는지 구분하기 위해 사용
+        destination = (EditText)findViewById(R.id.destinationArea);
+        destinationAddress = destination.getText().toString(); // 검색란에 적은 내용을 가져옴
+
+        int tag =  Integer.parseInt(destination.getTag().toString()); // 태그로 어디에서 왔는지 구분하기 위해 사용
+
         Intent it = new Intent(this,SearchResult.class);
-        it.putExtra("destinationText",destinationText);
-        it.putExtra("it_tag",tag);
-        it.putExtra("currentAddress",currentAddress);
+        it.putExtra("destinationAddress",destinationAddress); // 도착지 정보
+        it.putExtra("currentAddress",currentAddress); // 현재위치 정보
+        it.putExtra("it_tag",tag); // 1번태그
+
         startActivity(it);
     }
 

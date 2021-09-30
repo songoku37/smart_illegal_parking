@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class postpage extends AppCompatActivity {
+public class PostPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
