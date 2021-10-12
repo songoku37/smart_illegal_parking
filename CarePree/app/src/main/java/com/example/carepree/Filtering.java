@@ -16,10 +16,14 @@ import android.view.View;
 
 public class Filtering extends AppCompatActivity {
 
+    // private var auth : FirebaseAuth? = null      사용할 액티비티에서 전역변수로 설정
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtering);
+
+        // auth = Firebase.auth;               onCreate 에서 할당
 
     }
 

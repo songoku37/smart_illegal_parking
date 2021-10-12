@@ -1,4 +1,8 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+apply plugin: 'com.android.application'                 // 파이어베이스 SDK 추가
+apply plugin: 'com.google.gms.google-services'          // 파이어베이스 SDK 추가
+
 buildscript {
     repositories {
         google()
@@ -6,6 +10,14 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
+
+        classpath 'com.google.gms:google-services:4.3.10'                   // 파이어베이스 SDK 추가
+
+        implementation platform('com.google.firebase:firebase-bom:28.4.2')  // 파이어베이스 SDK 추가
+
+        // implementation 'com.google.firebase:firebase-auth'                  // Firebase 인증 Android 라이브러리의 종속 항목을 선언 (자바)
+
+        implementation 'com.google.firebase:firebase-auth-ktx'                 // Firebase 인증 Android 라이브러리의 종속 항목을 선언 (코틀린)
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
