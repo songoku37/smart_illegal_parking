@@ -10,9 +10,11 @@ package com.example.carepree;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.location.Location;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -56,6 +58,7 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
     }
 
 
+
     public void createMaps(){
         // GPS 사용 준비
         tMapGPS = new TMapGpsManager(this);
@@ -66,6 +69,10 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         //tMapGPS.setProvider(tMapGPS.GPS_PROVIDER); // GPS방법 [위성기반] (작동 안 함)
 
         // GPS시작
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1); //위치권한 탐색 허용 관련 내용
+        }
+
         tMapGPS.OpenGps();
 
         // tMap 기본셋팅
