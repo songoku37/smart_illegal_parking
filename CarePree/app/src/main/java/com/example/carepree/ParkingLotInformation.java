@@ -143,20 +143,6 @@ public class ParkingLotInformation extends AppCompatActivity {
     }
 
 
-     /*
-        함수명   : enterFavorites
-        간략     : 즐겨찾기 페이지로 이동
-        상세     : 즐겨찾기로 페이지로 이동하기 위한 onClick
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        param    : v : 클릭한 View객체
-        why      : 즐겨찾기 페이지로 이동하기 위해 만들었습니다.
-     */
-
-    public void enterFavorites(View v){ // 즐겨찾기로 이동
-        Intent it = new Intent(this,Favorites.class);
-        startActivity(it);
-    }
 
      /*
         함수명   : enterMain

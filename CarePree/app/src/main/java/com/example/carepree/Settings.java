@@ -35,10 +35,6 @@ public class Settings extends AppCompatActivity {
         why      : 즐겨찾기 페이지로 이동하기 위해 만들었습니다.
      */
 
-    public void enterFavorites(View v){ // 즐겨찾기로 이동
-        Intent it = new Intent(this,Favorites.class);
-        startActivity(it);
-    }
 
     /*
         함수명   : enterMain
