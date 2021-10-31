@@ -50,10 +50,6 @@ public class DepartureSearchList extends AppCompatActivity {
 
      */
 
-    public void enterFilteringFromDeparture(View v){ // 필터링 화면으로 이동
-        Intent it = new Intent(this,Filtering.class);
-        startActivity(it);
-    }
 
     /*
         함수명   :

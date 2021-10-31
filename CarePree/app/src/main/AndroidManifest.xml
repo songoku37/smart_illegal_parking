@@ -23,13 +23,10 @@
         <activity android:name=".TmapNavi"></activity>
         <activity android:name=".DestinationSearchListFrom" />
         <activity android:name=".DepartureSearchList" />
-        <activity android:name=".FilteringFromParkingLotList" />
         <activity android:name=".Settings" />
-        <activity android:name=".Favorites" />
         <activity android:name=".SearchResult" />
         <activity android:name=".SearchList" />
         <activity android:name=".NearParkingLotMain" />
-        <activity android:name=".Filtering" />
         <activity android:name=".ParkingLotList" />
         <activity android:name=".ParkingLotInformation" />
         <activity android:name=".MainActivity">

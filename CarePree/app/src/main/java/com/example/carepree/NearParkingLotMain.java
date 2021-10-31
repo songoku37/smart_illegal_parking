@@ -9,11 +9,13 @@
 package com.example.carepree;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.telecom.ConnectionService;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -43,6 +45,7 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
 
     double currentLongitude;
     double currentLatitude;
+    boolean locationButton = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +76,7 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         tMapView.setHttpsMode(true); // https 모드 허용해야 지도 뜸
         tMapView.setSKTMapApiKey("l7xxcffd8a912983400d81c75a095eb912e8"); // tMapView 기본셋팅 (앱키)
 
-        LinearLayout linearLayoutTmap = (LinearLayout) findViewById(R.id.map); // 레이아웃에 있는 Id값 받아와서 여기에다 지도 표시하기 위한 준비
+        ConstraintLayout constraintLayoutTmap = (ConstraintLayout) findViewById(R.id.map); // 레이아웃에 있는 Id값 받아와서 여기에다 지도 표시하기 위한 준비
 
         // tMap 옵션추가
         tMapView.setSightVisible(true); // 어느 방향을 보고 있는지 보여줌
@@ -82,7 +85,7 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         tMapView.setZoomLevel(17);
 
 
-        linearLayoutTmap.addView(tMapView); //
+        constraintLayoutTmap.addView(tMapView); //
     }
 
 
@@ -102,7 +105,6 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         if(currentAddress == null){
             Toast.makeText(this,"현재 위치정보를 받아오고 있습니다." ,Toast.LENGTH_LONG).show();
             new GettingCurrentPOI().execute();
-
         }else{
             Intent it = new Intent(this,SearchList.class);
             it.putExtra("currentAddress",currentAddress);
@@ -133,21 +135,6 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
             it.putExtra("currentLongitude",currentLongitude); // 현재 경도
             startActivity(it);
         }
-    }
-
-     /*
-        함수명   : enterFavorites
-        간략     : 즐겨찾기 페이지로 이동
-        상세     : 즐겨찾기로 페이지로 이동하기 위한 onClick
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        param    : v : 클릭한 View객체
-        why      : 즐겨찾기 페이지로 이동하기 위해 만들었습니다.
-     */
-
-    public void enterFavorites(View v){ // 즐겨찾기로 이동
-        Intent it = new Intent(this,Favorites.class);
-        startActivity(it);
     }
 
      /*
@@ -193,15 +180,53 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
     @Override
     public void onLocationChange(Location location) {
         // 이걸 써야 처음 좌표와 다른위치로 이동했다는걸 인식해 그 좌표를 가져와서 거기로 이동(콜백 메소드)
-        tMapView.setLocationPoint(location.getLongitude(), location.getLatitude()); // 서클을 현재 위치 중심좌표로 이동(좌표)
-        tMapView.setCenterPoint(location.getLongitude(), location.getLatitude()); // 서클이 있는 곳으로 이동(현재위치로이동)
-        TMapPoint tpoint = tMapView.getLocationPoint();
-        currentLatitude = tpoint.getLatitude();
-        currentLongitude = tpoint.getLongitude();
-        tmapdata = new TMapData();
+        if(locationButton){
+            Log.d("작동합니다.","작동합니다.");
 
-        new GettingCurrentPOI().execute();
+            tMapView.setLocationPoint(location.getLongitude(), location.getLatitude()); // 서클을 현재 위치 중심좌표로 이동(좌표)
+            tMapView.setCenterPoint(location.getLongitude(), location.getLatitude()); // 서클이 있는 곳으로 이동(현재위치로이동)
+            TMapPoint tpoint = tMapView.getLocationPoint();
+            currentLatitude = tpoint.getLatitude();
+            currentLongitude = tpoint.getLongitude();
+            tmapdata = new TMapData();
+
+            new GettingCurrentPOI().execute();
+        }else{
+
+            Log.d("작동 안합니다.","작동 안합니다.");
+            TMapPoint tpoint = tMapView.getLocationPoint();
+            currentLatitude = tpoint.getLatitude();
+            currentLongitude = tpoint.getLongitude();
+            tmapdata = new TMapData();
+
+            new GettingCurrentPOI().execute();
+        }
+
     }
+
+         /*
+        함수명   : changeLocationMode
+        간략     : 자기 시점을 고정시킬지 아닐지에 대한 함수입니다.
+        상세     : 버튼을 누르면 자기 시점에 고정되고 버튼을 한 번더 누르면 자유시점으로 바뀝니다.
+        작성자   : 이성재
+        날짜     : 2021.06.31
+        param    : v : 버튼 클릭
+        why      : 다른 장소를 보고 싶은데 자기 시점에 계속 고정되어서 다시 되돌아가는 상황을 고려해 마늗ㄹ었습니다.
+     */
+
+    public void changeLocationMode(View v) { // 위치가 변할 때마다 onLocation을 작동할지 말지에 대한 버튼리스너
+        if (locationButton == true){
+
+            locationButton = false;
+            tMapView.setLocationPoint(currentLongitude, currentLatitude); // 서클을 현재 위치 중심좌표로 이동(좌표)
+            tMapView.setCenterPoint(currentLongitude, currentLatitude); // 서클이 있는 곳으로 이동(현재위치로이동)
+            Log.d("false입니다.","false입니다.");
+        }else if(locationButton == false){
+            locationButton = true;
+            Log.d("true입니다.","true입니다.");
+        }
+    }
+
 
 
          /*
@@ -227,6 +252,9 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         @Override
         protected Void doInBackground(Void... voids) {
             try {
+                TMapPoint tpoint = tMapView.getLocationPoint();
+                currentLatitude = tpoint.getLatitude();
+                currentLongitude = tpoint.getLongitude();
                 currentAddress = tmapdata.convertGpsToAddress(currentLatitude, currentLongitude);
             } catch (IOException e) {
                 e.printStackTrace();

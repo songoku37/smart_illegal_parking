@@ -46,23 +46,6 @@ public class SearchList extends AppCompatActivity {
         currentAddress = it.getStringExtra("currentAddress");
     }
 
-     /*
-        함수명   :
-        간략     :
-        상세     :
-        작성자   :
-        날짜     :
-        return   :
-        param    :
-        why      :
-     */
-
-    public void enterFiltering(View v){ // 필터링 화면으로 이동
-
-        Intent it = new Intent(this,Filtering.class);
-        startActivity(it);
-    }
-
       /*
         함수명   : enterSearchResult
         간략     : SearchResult 페이지로 넘어갑니다.

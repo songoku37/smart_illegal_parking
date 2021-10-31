@@ -84,12 +84,23 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/search_result_map"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7.7"
-        android:orientation="horizontal" />
+        android:layout_weight="7.7">
+
+        <Button
+            android:id="@+id/location_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="29dp"
+            android:onClick="changeLocationMode"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/bottom"

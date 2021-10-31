@@ -51,10 +51,6 @@ public class DestinationSearchListFrom extends AppCompatActivity {
 
      */
 
-    public void enterFilteringFromArrival(View view){ // 필터링 화면으로 이동
-        Intent it = new Intent(this,Filtering.class);
-        startActivity(it);
-    }
 
 
     /*

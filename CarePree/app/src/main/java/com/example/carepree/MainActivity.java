@@ -11,11 +11,24 @@ package com.example.carepree;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +57,8 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(this,NearParkingLotMain.class);
         startActivity(it);
     }
+
+
+
 
 }
