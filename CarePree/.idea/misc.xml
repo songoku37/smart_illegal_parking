@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.50625" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable/background_splash.xml" value="0.50625" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.50625" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable/ic_launcher_background.xml" value="0.50625" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.50625" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable/layout_background.xml" value="0.50625" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/drawable/splash.xml" value="0.5151041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/font/allerta.xml" value="0.5203125" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/font/font.xml" value="0.5203125" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_board.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_departure_search_list.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_destination_search_list.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_editpost.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_logo.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_main.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_near_parking_lot_main.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_parking_lot_information.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_parking_lot_list.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_postpage.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_search_list.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_search_result.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_settings.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_splash.xml" value="0.2712765957446808" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_tmap_navi.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_writepost.xml" value="0.4901041666666667" />
+        <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.50625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

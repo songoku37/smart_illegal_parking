@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".SearchResult">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEBEC"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="5"
+                android:background="@drawable/radius"
+                android:elevation="5dp"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/departureArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radius"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:onClick="enterDepartureSearchList"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="출발지"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+
+                <TextView
+                    android:id="@+id/destinationArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:onClick="enterDestinationSearchList"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="도착지"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tmapNavi"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:onClick="enterTmapNavi"
+                android:text="길찾기"
+                app:srcCompat="@drawable/tmap_navi" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_result_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.7">
+
+        <Button
+            android:id="@+id/location_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="29dp"
+            android:onClick="changeLocationMode"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/borderline"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="enterFavorites"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/favorites_btn"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:layout_weight="0"
+                android:onClick="enterFavorites"
+                app:srcCompat="@drawable/ic_favorites"
+                tools:tint="#808080" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="enterMain"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/main_btn"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:onClick="enterMain"
+                app:srcCompat="@drawable/ic_main"
+                tools:tint="#808080" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="enterSettings"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/settings_btn"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:onClick="enterSettings"
+                app:srcCompat="@drawable/ic_settings"
+                tools:tint="#808080" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
