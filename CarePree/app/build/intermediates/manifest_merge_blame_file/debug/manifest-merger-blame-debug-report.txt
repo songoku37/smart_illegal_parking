@@ -6,129 +6,187 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml
+8-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml
+9-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:7:5-79
-13-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:7:22-76
+13-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:8:5-79
-14-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:8:22-76
+14-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:8:22-76
 15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-15-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:5-81
-15-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:22-78
+15-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:22-78
 16    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-16-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:10:5-98
-16-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:10:22-95
+16-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:10:5-98
+16-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:10:22-95
 17    <uses-permission android:name="com.dev.cromer.jason.coverme.permission.MAPS_RECEIVE" />
-17-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:11:5-92
-17-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:11:22-89
+17-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:11:5-92
+17-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:11:22-89
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:5-81
-18-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:22-78
+18-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:5-81
+18-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:9:22-78
 19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-19-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:13:5-80
-19-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:13:22-77
+19-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:13:5-80
+19-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:13:22-77
 20
 21    <queries>
-21-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:51:5-54:15
+21-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:51:5-54:15
 22        <package android:name="com.skt.skaf.l001mtm091" />
-22-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:52:9-59
-22-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:52:18-56
+22-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:52:9-59
+22-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:52:18-56
 23        <package android:name="com.skt.tmap.ku" />
-23-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:53:9-51
-23-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:53:18-48
+23-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:53:9-51
+23-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:53:18-48
 24    </queries>
 25
 26    <application
-26-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:16:5-49:19
+26-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:16:5-49:19
 27        android:allowBackup="true"
-27-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:17:9-35
+27-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:17:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.3.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8dbd859d1cd89239b42e7382b4fc40d7\core-1.3.1\AndroidManifest.xml:24:18-86
+28-->[androidx.core:core:1.3.1] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8dbd859d1cd89239b42e7382b4fc40d7\core-1.3.1\AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:extractNativeLibs="false"
 31        android:icon="@mipmap/ic_launcher"
-31-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:18:9-43
+31-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:18:9-43
 32        android:label="CarePree"
-32-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:19:9-33
+32-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:19:9-33
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:20:9-54
+33-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:20:9-54
 34        android:supportsRtl="true"
-34-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:21:9-35
+34-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:21:9-35
 35        android:testOnly="true"
 36        android:theme="@style/Theme.CarePree"
-36-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:22:9-46
+36-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:22:9-46
 37        android:usesCleartextTraffic="true" >
-37-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:23:9-44
+37-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:23:9-44
 38        <activity android:name="com.example.carepree.TmapNavi" />
-38-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:24:9-45
-38-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:24:19-43
+38-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:24:9-45
+38-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:24:19-43
 39        <activity android:name="com.example.carepree.DestinationSearchListFrom" />
-39-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:25:9-63
-39-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:25:19-60
+39-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:25:9-63
+39-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:25:19-60
 40        <activity android:name="com.example.carepree.DepartureSearchList" />
-40-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:26:9-57
-40-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:26:19-54
+40-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:26:9-57
+40-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:26:19-54
 41        <activity android:name="com.example.carepree.Settings" />
-41-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:27:9-46
-41-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:27:19-43
+41-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:27:9-46
+41-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:27:19-43
 42        <activity android:name="com.example.carepree.SearchResult" />
-42-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:28:9-50
-42-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:28:19-47
+42-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:28:9-50
+42-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:28:19-47
 43        <activity android:name="com.example.carepree.SearchList" />
-43-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:29:9-48
-43-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:29:19-45
+43-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:29:9-48
+43-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:29:19-45
 44        <activity android:name="com.example.carepree.NearParkingLotMain" />
-44-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:30:9-56
-44-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:30:19-53
+44-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:30:9-56
+44-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:30:19-53
 45        <activity android:name="com.example.carepree.ParkingLotList" />
-45-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:31:9-52
-45-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:31:19-49
+45-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:31:9-52
+45-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:31:19-49
 46        <activity android:name="com.example.carepree.ParkingLotInformation" />
-46-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:32:9-59
-46-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:32:19-56
+46-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:32:9-59
+46-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:32:19-56
 47        <activity android:name="com.example.carepree.Board" />
-47-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:33:9-42
-47-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:33:19-40
+47-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:33:9-42
+47-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:33:19-40
 48        <activity android:name="com.example.carepree.PostPage" />
-48-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:34:9-45
-48-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:34:19-43
+48-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:34:9-45
+48-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:34:19-43
 49        <activity android:name="com.example.carepree.PostWriting" />
-49-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:35:9-48
-49-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:35:19-46
+49-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:35:9-48
+49-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:35:19-46
 50        <activity android:name="com.example.carepree.PostEditing" />
-50-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:36:9-48
-50-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:36:19-46
+50-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:36:9-48
+50-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:36:19-46
 51        <activity android:name="com.example.carepree.MainActivity" >
-51-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:37:9-43:20
-51-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:37:19-47
+51-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:37:9-43:20
+51-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:37:19-47
 52            <intent-filter>
-52-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:38:13-42:29
+52-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:38:13-42:29
 53                <action android:name="android.intent.action.MAIN" />
-53-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:39:17-69
-53-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:39:25-66
+53-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:39:17-69
+53-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:39:25-66
 54
 55                <category android:name="android.intent.category.LAUNCHER" />
-55-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:41:17-77
-55-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:41:27-74
+55-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:41:17-77
+55-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:41:27-74
 56            </intent-filter>
 57        </activity>
 58
 59        <meta-data
-59-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:45:9-47:57
+59-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:45:9-47:57
 60            android:name="preloaded_fonts"
-60-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:46:13-43
+60-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:46:13-43
 61            android:resource="@array/preloaded_fonts" />
-61-->C:\last_project\smart_illegal_parking\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:47:13-54
-62    </application>
-63
-64</manifest>
+61-->C:\parking git\smart_illegal_parking\CarePree\app\src\main\AndroidManifest.xml:47:13-54
+62
+63        <activity
+63-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+64            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+64-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+65            android:excludeFromRecents="true"
+65-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+66            android:exported="true"
+66-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+67            android:launchMode="singleTask"
+67-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+68            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+68-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+69-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+70
+71        <service
+71-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+72            android:name="com.google.firebase.components.ComponentDiscoveryService"
+72-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
+73            android:directBootAware="true"
+73-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8031eb551ff15ad32b300d4bb31e0332\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+74            android:exported="false" >
+74-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
+75            <meta-data
+75-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+76                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+76-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\df1b256541de29d15867ba2010eb766e\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+78        </service>
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\19bb7d12044c6f0cb2642e38525e9ca9\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\19bb7d12044c6f0cb2642e38525e9ca9\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\19bb7d12044c6f0cb2642e38525e9ca9\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\19bb7d12044c6f0cb2642e38525e9ca9\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+84
+85        <provider
+85-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8031eb551ff15ad32b300d4bb31e0332\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+86            android:name="com.google.firebase.provider.FirebaseInitProvider"
+86-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8031eb551ff15ad32b300d4bb31e0332\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+87            android:authorities="com.example.carepree.firebaseinitprovider"
+87-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8031eb551ff15ad32b300d4bb31e0332\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+88            android:exported="false"
+88-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8031eb551ff15ad32b300d4bb31e0332\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+89            android:initOrder="100" />
+89-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\8031eb551ff15ad32b300d4bb31e0332\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+90
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\b5a3f39bf4ddacacabf43b64773b9e83\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\b5a3f39bf4ddacacabf43b64773b9e83\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\gustjr99\.gradle\caches\transforms-2\files-2.1\b5a3f39bf4ddacacabf43b64773b9e83\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+94    </application>
+95
+96</manifest>
