@@ -30,7 +30,9 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
                 android:text="게시판"
+                android:textColor="@color/black"
                 android:textSize="18sp"
+                android:textStyle="bold"
                 tools:textStyle="bold" />
         </LinearLayout>
 
@@ -402,7 +404,8 @@
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="완료" />
+                android:onClick="enterPostPage"
+                android:text="수정" />
         </LinearLayout>
     </LinearLayout>
 

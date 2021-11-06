@@ -130,11 +130,33 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
             Toast.makeText(this,"현재 위치정보를 받아오고 있습니다." ,Toast.LENGTH_LONG).show();
         }else{
             Intent it = new Intent(this,ParkingLotList.class);
+
+            View parkingLotListButton = findViewById(R.id.parkingLotListButton);
+            int tag =  Integer.parseInt(parkingLotListButton.getTag().toString()); // 태그로 어디에서 왔는지 구분하기 위해 사용
+
+            it.putExtra("it_tag",tag); // 1번태그
+
             it.putExtra("currentAddress",currentAddress); // 현재 주소
             it.putExtra("currentLatitude",currentLatitude); // 현재 위도
             it.putExtra("currentLongitude",currentLongitude); // 현재 경도
             startActivity(it);
         }
+    }
+
+     /*
+        함수명   : enterBoard
+        간략     : 게시판으로 이동
+        상세     : 게시판으로 이동하기 위한 onClick
+        작성자   : 이성재
+        날짜     : 2021.11.06
+        param    : View (클릭한 View객체)
+        why      : 게시판 페이지로 이동하기 위해 만들었습니다.
+     */
+
+
+    public void enterBoard(View v){ // 메인으로 이동
+        Intent it = new Intent(this,Board.class);
+        startActivity(it);
     }
 
      /*

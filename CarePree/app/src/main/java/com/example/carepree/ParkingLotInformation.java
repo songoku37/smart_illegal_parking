@@ -12,16 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,68 +36,12 @@ public class ParkingLotInformation extends AppCompatActivity {
 
         informationData = (NearbyParkingLotSetterGetter) it.getSerializableExtra("parkingInformationsArrays"); // 클릭한 주차장에 해당하는 정보가 있는 객체를 받아옴
 
-        LinearLayout parkingInfoList = (LinearLayout)findViewById(R.id.information); // 주차장 정보가 들어갈 레이아웃
-
-        parkingInfoLayoutArrays = new ArrayList<LinearLayout>(); // 배열에다가 밑에 적은 LinearLayout설정한 걸 넣음
-
-        parkingInfoArrays = new ArrayList<TextView>(); // 배열에다가 밑에 적은 TextView설정한 걸 넣음
-
-        makeDynamicLayouts(); // 레이아웃을 동적으로 생성하고 배열에 저장합니다.
-        makeDynamicTxt(); // 텍스트를 동적으로 생성하고 배열에 저장합니다.
         setDynamicTxt(); // 텍스트뷰에 주차장정보를 저장합니다.
 
-        for(int i = 0 ; i < parkingInfoLayoutArrays.size(); i++){ // 주차장정보를 화면에 표시합니다.
-            parkingInfoLayoutArrays.get(i).addView(parkingInfoArrays.get(i));
-            parkingInfoList.addView(parkingInfoLayoutArrays.get(i));
-        }
+
     }
 
-     /*
-        함수명   : makeDynamicLayouts
-        간략     : 리니어레이아웃을 동적으로 생성합니다.
-        상세     : 리니어레이아웃을 동적으로 생성하고 주차장정보의 갯수만큼 배열에 저장합니다.
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        why      : 주차장 정보 갯수가 다 다르기 때문에 그에 해당하는 갯수만큼 동적으로 생성하게 하기 위해서입니다.
-     */
 
-    public void makeDynamicLayouts(){
-        for (int i = 0 ; i < 26 ; i++ ){
-            // 왜 레이아웃과 텍스트뷰를 위에 선언 해서 add만 적용하면 편하지 않냐고 하는데
-            // 이게 그렇게되면 A.addView(B)할때 A에 B를 넣는 것인데 그 다음 A.addView(C)하면 에러난다
-            // 왜냐하면 A는 이미 B라는 자식을 가지고 있기 때문에 C를 가질 수 없다
-            // 그래서 밑에 처럼 계속 생성 안 해주고 전역으로 생성한 걸 쓰면 똑같은 위치에 있는 걸 계속 참조하기 때문에
-            // LinearLayout에 설정과 TextView에 설정이 26개가 들어가도 다 완전 동일한 걸로 취급해서
-            // 위와 같이 자식을 1개밖에 가질 수 없기 때문에 참조도 제대로 안 대고 addView하면 에러가 터진다.
-
-            LinearLayout parkingInfoLayout = new LinearLayout(this); // 정보가 들어갈 레이아웃 생성
-            parkingInfoLayout.setOrientation(LinearLayout.VERTICAL);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            parkingInfoLayout.setLayoutParams(params);
-
-            parkingInfoLayoutArrays.add(parkingInfoLayout); // 레이아웃을 레이아웃을 저장할 수 있는 ArrayList에 저장
-
-        }
-    }
-
-      /*
-        함수명   : makeDynamicTxt
-        간략     : 텍스트뷰를 동적으로 생성합니다.
-        상세     : 텍스트뷰를 동적으로 생성하고 주차장정보의 갯수만큼 배열에 저장합니다.
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        why      : 주차장 정보 갯수가 다 다르기 때문에 그에 해당하는 갯수만큼 동적으로 생성하게 하기 위해서입니다.
-      */
-
-    public void makeDynamicTxt(){
-        for (int i = 0 ; i < 26 ; i++ ) {
-            TextView parkingInfo = new TextView(this); // width와 height 설정
-            ViewGroup.LayoutParams params2 = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            parkingInfo.setLayoutParams(params2);
-
-            parkingInfoArrays.add(parkingInfo); // 텍스트 뷰를 텍스트뷰를 저장할 수 있는 ArrayList에 저장
-        }
-    }
 
       /*
         함수명   : setDynamicTxt
@@ -114,32 +53,59 @@ public class ParkingLotInformation extends AppCompatActivity {
       */
 
     public void setDynamicTxt(){
-        parkingInfoArrays.get(0).setText("주차장 이름       : " + informationData.getPrkplceNm());
-        parkingInfoArrays.get(1).setText("주차장 구분 : " + informationData.getPrkplceSe());
-        parkingInfoArrays.get(2).setText("주차장 유형 : " + informationData.getPrkplceType());
-        parkingInfoArrays.get(3).setText("도로명 주소 : " + informationData.getRdnmadr());
-        parkingInfoArrays.get(4).setText("주차 구획수 : " + informationData.getPrkcmprt());
-        parkingInfoArrays.get(5).setText("급지 구분          :" + informationData.getFeedingSe());
-        parkingInfoArrays.get(6).setText("부제시행구분       : " + informationData.getEnforceSe());
-        parkingInfoArrays.get(7).setText("운영요일           :" + informationData.getOperDay());
-        parkingInfoArrays.get(8).setText("평일운영시작시각   : " + informationData.getWeekdayOperOpenHhmm());
-        parkingInfoArrays.get(9).setText("평일운영종료시각   : " + informationData.getWeekdayOperColseHhmm());
-        parkingInfoArrays.get(10).setText("토요일운영시작시각 : " + informationData.getSatOperOperOpenHhmm());
-        parkingInfoArrays.get(11).setText("토요일운영종료시각 : " + informationData.getSatOperCloseHhmm());
-        parkingInfoArrays.get(12).setText("공휴일운영시작시각 : " + informationData.getHolidayOperOpenHhmm());
-        parkingInfoArrays.get(13).setText("공휴일운영종료시각 : " + informationData.getHolidayCloseOpenHhmm());
-        parkingInfoArrays.get(14).setText("요금정보           : " + informationData.getParkingchrgeInfo());
-        parkingInfoArrays.get(15).setText("주차기본시간         : " + informationData.getBasicTime());
-        parkingInfoArrays.get(16).setText("주차기본요금 : " + informationData.getBasicCharge());
-        parkingInfoArrays.get(17).setText("추가단위시간 : " + informationData.getAddUnitTime());
-        parkingInfoArrays.get(18).setText("추가단위요금 : " + informationData.getAddUnitCharge());
-        parkingInfoArrays.get(19).setText("1일주차권요금적용시간 : " + informationData.getDayCmmtktAdjTime());
-        parkingInfoArrays.get(20).setText("1일주차권요금 : " + informationData.getDayCmmtkt());
-        parkingInfoArrays.get(21).setText("월정기권요금 : " + informationData.getMonthCmmtkt());
-        parkingInfoArrays.get(22).setText("결제방법 : " + informationData.getMetpay());
-        parkingInfoArrays.get(23).setText("특기사항 : " + informationData.getSpcmnt());
-        parkingInfoArrays.get(24).setText("관리기관명 : " + informationData.getInstitutionNm());
-        parkingInfoArrays.get(25).setText("전화번호 : " + informationData.getPhoneNumber());
+
+        TextView parkingText1 = (TextView) findViewById(R.id.parkingText1);
+        TextView parkingText2 = (TextView) findViewById(R.id.parkingText2);
+        TextView parkingText3 = (TextView) findViewById(R.id.parkingText3);
+        TextView parkingText4 = (TextView) findViewById(R.id.parkingText4);
+        TextView parkingText5 = (TextView) findViewById(R.id.parkingText5);
+        TextView parkingText6 = (TextView) findViewById(R.id.parkingText6);
+        TextView parkingText7 = (TextView) findViewById(R.id.parkingText7);
+        TextView parkingText8 = (TextView) findViewById(R.id.parkingText8);
+        TextView parkingText9 = (TextView) findViewById(R.id.parkingText9);
+        TextView parkingText10 = (TextView) findViewById(R.id.parkingText10);
+        TextView parkingText11 = (TextView) findViewById(R.id.parkingText11);
+        TextView parkingText12 = (TextView) findViewById(R.id.parkingText12);
+        TextView parkingText13 = (TextView) findViewById(R.id.parkingText13);
+        TextView parkingText14 = (TextView) findViewById(R.id.parkingText14);
+        TextView parkingText15 = (TextView) findViewById(R.id.parkingText15);
+        TextView parkingText16 = (TextView) findViewById(R.id.parkingText16);
+        TextView parkingText17 = (TextView) findViewById(R.id.parkingText17);
+        TextView parkingText18 = (TextView) findViewById(R.id.parkingText18);
+        TextView parkingText19 = (TextView) findViewById(R.id.parkingText19);
+        TextView parkingText20 = (TextView) findViewById(R.id.parkingText20);
+        TextView parkingText21 = (TextView) findViewById(R.id.parkingText21);
+        TextView parkingText22 = (TextView) findViewById(R.id.parkingText22);
+        TextView parkingText23 = (TextView) findViewById(R.id.parkingText23);
+        TextView parkingText24 = (TextView) findViewById(R.id.parkingText24);
+        TextView parkingText25 = (TextView) findViewById(R.id.parkingText25);
+        TextView parkingText26 = (TextView) findViewById(R.id.parkingText26);
+        parkingText1.setText(informationData.getPrkplceNm());
+        parkingText2.setText(informationData.getPrkplceSe());
+        parkingText3.setText(informationData.getPrkplceType());
+        parkingText4.setText(informationData.getRdnmadr());
+        parkingText5.setText(informationData.getPrkcmprt());
+        parkingText6.setText(informationData.getFeedingSe());
+        parkingText7.setText(informationData.getEnforceSe());
+        parkingText8.setText(informationData.getOperDay());
+        parkingText9.setText(informationData.getWeekdayOperOpenHhmm());
+        parkingText10.setText(informationData.getWeekdayOperColseHhmm());
+        parkingText11.setText(informationData.getSatOperOperOpenHhmm());
+        parkingText12.setText(informationData.getSatOperCloseHhmm());
+        parkingText13.setText(informationData.getHolidayOperOpenHhmm());
+        parkingText14.setText(informationData.getHolidayCloseOpenHhmm());
+        parkingText15.setText(informationData.getParkingchrgeInfo());
+        parkingText16.setText(informationData.getBasicTime());
+        parkingText17.setText(informationData.getBasicCharge());
+        parkingText18.setText(informationData.getAddUnitTime());
+        parkingText19.setText(informationData.getAddUnitCharge());
+        parkingText20.setText(informationData.getDayCmmtktAdjTime());
+        parkingText21.setText(informationData.getDayCmmtkt());
+        parkingText22.setText(informationData.getMonthCmmtkt());
+        parkingText23.setText(informationData.getMetpay());
+        parkingText24.setText(informationData.getSpcmnt());
+        parkingText25.setText(informationData.getInstitutionNm());
+        parkingText26.setText(informationData.getPhoneNumber());
     }
 
 

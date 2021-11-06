@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6222c0a-13ca-4f72-9ede-07a023b82881" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/DepartureSearchList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/DepartureSearchList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/DestinationSearchListFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/DestinationSearchListFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/Favorites.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/Filtering.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/FilteringFromParkingLotList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/NearParkingLotMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/NearParkingLotMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/ParkingLotInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/ParkingLotInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/ParkingLotList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/ParkingLotList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/SearchList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/SearchList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/SearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/java/com/example/carepree/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_board.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_board.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_favorites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_filtering.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_filtering_from_parking_lot_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_near_parking_lot_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_near_parking_lot_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_search_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CarePree/app/src/main/res/layout/activity_search_result.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d6222c0a-13ca-4f72-9ede-07a023b82881" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,9 +35,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="571" y="253" key="FileChooserDialogImpl" timestamp="1635639399403">
+    <state x="571" y="253" key="FileChooserDialogImpl" timestamp="1636114443141">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="571" y="253" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1635639399403" />
+    <state x="571" y="253" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1636114443141" />
   </component>
 </project>

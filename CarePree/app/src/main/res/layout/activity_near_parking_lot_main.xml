@@ -33,7 +33,9 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
                 android:text="현재 위치"
+                android:textColor="#000000"
                 android:textSize="18sp"
+                android:textStyle="bold"
                 tools:textStyle="bold" />
         </LinearLayout>
 
@@ -57,17 +59,18 @@
             android:text="Button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:id="@+id/information"
+        android:id="@+id/parkingLotListButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
         android:clickable="true"
         android:onClick="enterParkingLotList"
         android:orientation="horizontal"
-        android:tag="03">
+        android:tag="1">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -102,7 +105,24 @@
         android:orientation="horizontal"
         android:paddingTop="6dp"
         android:paddingBottom="10dp"
-        android:weightSum="3">
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="enterBoard"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/favorites_btn"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:layout_weight="0"
+                android:onClick="enterBoard"
+                app:srcCompat="@drawable/board" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,9 +137,7 @@
                 android:layout_width="54dp"
                 android:layout_height="35dp"
                 android:layout_weight="0"
-                android:onClick="enterFavorites"
-                app:srcCompat="@drawable/ic_favorites"
-                tools:tint="#808080" />
+                app:srcCompat="@drawable/chatting" />
         </LinearLayout>
 
         <LinearLayout

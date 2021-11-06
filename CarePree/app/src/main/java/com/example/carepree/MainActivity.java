@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 
@@ -29,34 +30,22 @@ import java.io.InputStreamReader;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent main = new Intent(MainActivity.this, NearParkingLotMain.class);
+                startActivity(main);
+                finish();
+            }
+        }, 3000);
     }
-
-    public void enterTmapNavi(View v){ // 출발지 검색화면으로 이동
-        Intent it = new Intent(this, TmapNavi.class);
-        startActivity(it);
-    }
-     /*
-        함수명   : enterNearParkingLotMain
-        간략     : 인근주차장 메인페이지로 넘어가는 onClick
-        상세     : 인근주차장 알려주는 페이지로 넘어가는 onClick
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        param    : v : 클릭한 View객체
-        why      : 해당 페이지로 넘어가야 기능을 제공해줄 수 있기 때문에
-     */
-
-
-    public void enterNearParkingLotMain(View v){ // 인근 주차장검색화면으로 이동
-        Intent it = new Intent(this,NearParkingLotMain.class);
-        startActivity(it);
-    }
-
 
 
 

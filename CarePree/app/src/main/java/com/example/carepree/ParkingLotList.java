@@ -47,11 +47,14 @@ public class ParkingLotList extends AppCompatActivity {
     final double PER_LONGITUDE = 0.0112688753662384; // 1km당 경도
     double currentLatitude = 0;
     double currentLongitude = 0;
+    double destinationLatitude = 0;
+    double destinationLongitude = 0;
 
     int iter = 0;
-
+    int checkingTag;
     String resultCode = "";
     String currentAddress;
+    String destinationAddress;
 
     List<NearbyParkingLotSetterGetter> parkingArray = new ArrayList<NearbyParkingLotSetterGetter>(100);
 
@@ -84,13 +87,59 @@ public class ParkingLotList extends AppCompatActivity {
         why      : navigation 아이콘을 눌렀을때 출발지와 도착지에 뿌리기 위한 정보를 받아오기위해 만들었습니다.
      */
 
+     /*
+        함수명   : getParameter
+        간략     : 현재위치정보를 보낸 걸 받아옵니다.
+        상세     : 1번태그이면 현재 위치 주소와 위도경도값을 받아옵니다. 2번태그이면 도착지의 주소와 위도 경도값을 받아옵니다.
+        작성자   : 이성재
+        날짜     : 2021.06.07
+        why      : navigation 아이콘을 눌렀을때 출발지와 도착지에 뿌리기 위한 정보를 받아오기위해 만들었습니다.
+     */
+
     public void getParameter(){
 
         Intent it = getIntent();
-        currentAddress = it.getStringExtra("currentAddress");
-        currentLatitude = it.getDoubleExtra("currentLatitude",0);
-        currentLongitude = it.getDoubleExtra("currentLongitude",0);
 
+        checkingTag = it.getIntExtra("it_tag", 0);
+        Log.d("checkingTag", String.valueOf(checkingTag));
+        if(checkingTag == 1){
+            currentAddress = it.getStringExtra("currentAddress");
+            currentLatitude = it.getDoubleExtra("currentLatitude",0);
+            currentLongitude = it.getDoubleExtra("currentLongitude",0);
+        }else if (checkingTag == 2){
+
+            currentAddress = it.getStringExtra("departureAddress");
+            currentLatitude = it.getDoubleExtra("departureLatitude",0);
+            currentLongitude = it.getDoubleExtra("departureLongitude",0);
+
+            destinationAddress = it.getStringExtra("destinationAddress");
+            destinationLatitude = it.getDoubleExtra("destinationLatitude",0);
+            destinationLongitude = it.getDoubleExtra("destinationLongitude",0);
+
+            Log.d("currentAddress",currentAddress);
+            Log.d("currentLongitude", String.valueOf(currentLongitude));
+            Log.d("currentLatitude", String.valueOf(currentLatitude));
+            Log.d("destinationAddress",destinationAddress);
+            Log.d("destinationLongitude", String.valueOf(destinationLongitude));
+            Log.d("destinationLatitude", String.valueOf(destinationLatitude));
+        }
+
+    }
+
+     /*
+        함수명   : enterBoard
+        간략     : 게시판으로 이동
+        상세     : 게시판으로 이동하기 위한 onClick
+        작성자   : 이성재
+        날짜     : 2021.11.06
+        param    : View (클릭한 View객체)
+        why      : 게시판 페이지로 이동하기 위해 만들었습니다.
+     */
+
+
+    public void enterBoard(View v){ // 메인으로 이동
+        Intent it = new Intent(this,Board.class);
+        startActivity(it);
     }
 
 
@@ -140,19 +189,37 @@ public class ParkingLotList extends AppCompatActivity {
         double dLongitude = Double.parseDouble(longitude);
         boolean judgeSwi = false;
 
-        if((dLatitude < (currentLatitude + (PER_LATITUDE))) && dLatitude > ((currentLatitude) - (PER_LATITUDE))){ // 1km 위도 범위내에 있으면
-            if((dLongitude < (currentLongitude) + (PER_LATITUDE)) && dLongitude > ((currentLongitude) - (PER_LONGITUDE))){ // 1km 경도 범위내에 있으면
-                judgeSwi = true;
-                return judgeSwi;
-            }else{
+        if(checkingTag==1){
+            if((dLatitude < (currentLatitude + (PER_LATITUDE))) && dLatitude > ((currentLatitude) - (PER_LATITUDE))){ // 1km 위도 범위내에 있으면
+                if((dLongitude < (currentLongitude) + (PER_LATITUDE)) && dLongitude > ((currentLongitude) - (PER_LONGITUDE))){ // 1km 경도 범위내에 있으면
+                    judgeSwi = true;
+                    return judgeSwi;
+                }else{
+                    judgeSwi = false;
+                    return judgeSwi;
+                }}
+            else{
                 judgeSwi = false;
                 return judgeSwi;
-            }}
-        else{
-            judgeSwi = false;
-            return judgeSwi;
 
+            }
+        }else if (checkingTag == 2){
+            Log.d("checkingTag", String.valueOf(checkingTag));
+            if((dLatitude < (destinationLatitude + (PER_LATITUDE))) && dLatitude > ((destinationLatitude) - (PER_LATITUDE))){ // 1km 위도 범위내에 있으면
+                if((dLongitude < (destinationLongitude) + (PER_LATITUDE)) && dLongitude > ((destinationLongitude) - (PER_LONGITUDE))){ // 1km 경도 범위내에 있으면
+                    judgeSwi = true;
+                    return judgeSwi;
+                }else{
+                    judgeSwi = false;
+                    return judgeSwi;
+                }}
+            else{
+                judgeSwi = false;
+                return judgeSwi;
+
+            }
         }
+        return judgeSwi;
     }
 
     private static double distance(double lat1, double lon1, double lat2, double lon2, String unit) {
@@ -278,12 +345,22 @@ public class ParkingLotList extends AppCompatActivity {
                 String clickTagNumber = (String)parkingListInnerInner.getTag(); // Tag 값으로 ArrayList에 몇번째인지 파악한다.
                 int tagNumber = Integer.parseInt(clickTagNumber); // String형태인 Tag값을 Index값을 지정해주기 위해서 사용
 
-                Intent it = new Intent(ParkingLotList.this,ParkingLotInformation.class);
-                it.putExtra("parkingInformationsArrays", parkingArray.get(tagNumber)); // 해당 주차장에 대한 정보가 들어간 ArrayList를 넘김
-                it.putExtra("currentAddress",currentAddress); // 현재 위치 주소를 보냅니다.
-                it.putExtra("currentLatitude",currentLatitude); // 현재 위치 위도를 보냅니다.
-                it.putExtra("currentLongitude",currentLongitude); // 현재 위치 경도를 보냅니다.
-                startActivity(it);
+                if (checkingTag == 1){
+                    Intent it = new Intent(ParkingLotList.this,ParkingLotInformation.class);
+                    it.putExtra("parkingInformationsArrays", parkingArray.get(tagNumber)); // 해당 주차장에 대한 정보가 들어간 ArrayList를 넘김
+                    it.putExtra("currentAddress",currentAddress); // 현재 위치 주소를 보냅니다.
+                    it.putExtra("currentLatitude",currentLatitude); // 현재 위치 위도를 보냅니다.
+                    it.putExtra("currentLongitude",currentLongitude); // 현재 위치 경도를 보냅니다.
+                    startActivity(it);
+                }else if (checkingTag == 2){
+                    Intent it = new Intent(ParkingLotList.this,ParkingLotInformation.class);
+                    it.putExtra("parkingInformationsArrays", parkingArray.get(tagNumber)); // 해당 주차장에 대한 정보가 들어간 ArrayList를 넘김
+                    it.putExtra("currentAddress",destinationAddress); // 현재 위치 주소를 보냅니다.
+                    it.putExtra("currentLatitude",destinationLatitude); // 현재 위치 위도를 보냅니다.
+                    it.putExtra("currentLongitude",destinationLongitude); // 현재 위치 경도를 보냅니다.
+                    startActivity(it);
+                }
+
             }
         });
 
@@ -359,13 +436,30 @@ public class ParkingLotList extends AppCompatActivity {
             public void onClick(View v) {
                 String clickTagNumber = (String)parkingListInnerInner.getTag(); // Tag 값으로 ArrayList에 몇번째인지 파악한다.
                 int tagNumber = Integer.parseInt(clickTagNumber); // String형태인 Tag값을 Index값을 지정해주기 위해서 사용
-                Intent it2 = new Intent(ParkingLotList.this,SearchResult.class);
-                it2.putExtra("tag",4); // 4로 고정시킨 이유는 1 2 3 은 이미 다른 액티비티에서 넘어올때 구분값으로 쓰기때문
-                it2.putExtra("parkingName",dynamicParkingName); // 주차장 이름
-                it2.putExtra("currentAddress",currentAddress); // 현재위치
-                it2.putExtra("latitude", parkingArray.get(tagNumber).getLatitude()); // 해당 주차장에 위도값을 넘김
-                it2.putExtra("longitude",parkingArray.get(tagNumber).getLongitude()); // 해당 주차장에 경도값을 넘김
-                startActivity(it2);
+
+                if (checkingTag == 1){
+                    Intent it2 = new Intent(ParkingLotList.this,SearchResult.class);
+                    it2.putExtra("tag",4); // 4로 고정시킨 이유는 1 2 3 은 이미 다른 액티비티에서 넘어올때 구분값으로 쓰기때문
+                    it2.putExtra("parkingName",dynamicParkingName); // 주차장 이름
+                    it2.putExtra("currentAddress",currentAddress); // 현재위치
+                    it2.putExtra("latitude", parkingArray.get(tagNumber).getLatitude()); // 해당 주차장에 위도값을 넘김
+                    it2.putExtra("longitude",parkingArray.get(tagNumber).getLongitude()); // 해당 주차장에 경도값을 넘김
+                    startActivity(it2);
+                }else if (checkingTag == 2){
+                    Intent it2 = new Intent(ParkingLotList.this,SearchResult.class);
+                    it2.putExtra("tag",4); // 4로 고정시킨 이유는 1 2 3 은 이미 다른 액티비티에서 넘어올때 구분값으로 쓰기때문
+
+                    it2.putExtra("currentAddress",currentAddress); // 현재위치
+                    it2.putExtra("latitude", currentLatitude); // 해당 주차장에 위도값을 넘김
+                    it2.putExtra("longitude", currentLongitude); // 해당 주차장에 경도값을 넘김
+                    it2.putExtra("parkingName",dynamicParkingName); // 주차장 이름
+                    it2.putExtra("destinationAddress",destinationAddress); // 도착지 위치
+                    it2.putExtra("latitude2", parkingArray.get(tagNumber).getLatitude()); // 해당 주차장에 위도값을 넘김
+                    it2.putExtra("longitude2",parkingArray.get(tagNumber).getLongitude()); // 해당 주차장에 경도값을 넘김
+                    startActivity(it2);
+                }
+
+
             }
         });
 

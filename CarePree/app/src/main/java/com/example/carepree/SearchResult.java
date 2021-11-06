@@ -73,10 +73,10 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
     int tag;
 
-    double latitude;
-    double longitude ;
-    double latitude2;
-    double longitude2;
+    double latitude=0;
+    double longitude=0;
+    double latitude2=0;
+    double longitude2=0;
 
     String destinationPOIName;
     String departurePOIName;
@@ -84,7 +84,9 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
     String departureAddress;
 
     Context thisContext = this;
+
     boolean locationButton = true;
+    boolean checkingAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +109,8 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
         if(latitude != 0 && longitude !=0){
             if(latitude2 !=0 && longitude2 !=0){
+                checkingAddress = true;
+
                 new BridgePointAsynTask().execute();
                 new onlyPedestrianPointAsynTask().execute();
                 new pedestrianPriorityPointAsynTask().execute();
@@ -117,9 +121,11 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
                 new WaterFacilityPointAsynTask().execute();
             }else{
                 Toast.makeText(this,"도착지를 잘못입력하셨습니다." ,Toast.LENGTH_LONG).show();
+                checkingAddress = false;
             }
         }else{
             Toast.makeText(this,"출발지를 잘못입력하셨습니다." ,Toast.LENGTH_LONG).show();
+            checkingAddress = false;
         }
 
     }
@@ -219,37 +225,7 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
     // ---------------------------------------------------------화면 전환 메소드
 
-     /*
-        함수명   : enterMain
-        간략     : 메인페이지로 이동
-        상세     : 메인페이지로 이동하기 위한 onClick
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        param    : View (클릭한 View객체)
-        why      : 메인페이지로 이동하기 위해 만들었습니다.
-     */
-
-    public void enterMain(View v) { // 메인으로 이동
-        Intent it = new Intent(this, NearParkingLotMain.class);
-        startActivity(it);
-    }
-
       /*
-        함수명   : enterSettings
-        간략     : 설정 페이지로 이동
-        상세     : 설정페이지로 이동하기 위한 onClick
-        작성자   : 이성재
-        날짜     : 2021.06.05
-        param    : View (클릭한 View객체)
-        why      : 설정 페이지로 이동하기 위해 만들었습니다.
-     */
-
-    public void enterSettings(View v) { // 설정으로 이동
-        Intent it = new Intent(this, Settings.class);
-        startActivity(it);
-    }
-
-     /*
         함수명   : enterDestinationSearchList
         간략     : 도착지를 검색하는 액티비티로 넘어갑니다.
         상세     : 도착지로 검색하는 액티비티에 적혀있는 현재위치정보와 적혀있는 도착지 정보를 보내고 넘어갑니다.
@@ -295,22 +271,55 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
     public void enterTmapNavi(View v) { // 출발지 검색화면으로 이동
 
-        Intent it = new Intent(this, TmapNavi.class);
-        it.putExtra("departureAddress", departureAddress); // 현재위치명
-        it.putExtra("latitude", latitude); // 현재위치 위도
-        it.putExtra("longitude", longitude); // 현재위치 경도
+        if(checkingAddress == true){
+            Intent it = new Intent(this, TmapNavi.class);
+            it.putExtra("departureAddress", departureAddress); // 현재위치명
+            it.putExtra("latitude", latitude); // 현재위치 위도
+            it.putExtra("longitude", longitude); // 현재위치 경도
 
-        it.putExtra("destinationAddress", destinationAddress); // 도착지명
-        it.putExtra("latitude2", latitude2); // 도착지 위도
-        it.putExtra("longitude2", longitude2); // 도착지 경도
+            it.putExtra("destinationAddress", destinationAddress); // 도착지명
+            it.putExtra("latitude2", latitude2); // 도착지 위도
+            it.putExtra("longitude2", longitude2); // 도착지 경도
 
-        Log.d("테스트", departureAddress);
-        Log.d("테스트", destinationAddress);
-        Log.d("테스트", "경도" + latitude);
-        Log.d("테스트", "경도2" + latitude2);
-        Log.d("테스트", "위도" + longitude);
-        Log.d("테스트", "위도2" + longitude2);
-        startActivity(it);
+            startActivity(it);
+        }else if (checkingAddress == false){
+            Toast.makeText(this,"출발지나 도착지가 잘못 설정 되었습니다." ,Toast.LENGTH_LONG).show();
+        }
+    }
+
+    /*
+       함수명   : enterParkingLot
+       간략     : 도착지 주변의 주차장을 안내해주는 페이지로 이동합니다.
+       상세     : 도착지 주변의 주차장을 안내해주는 페이지에 도착지 값과 함께 전달해줍니다.
+       작성자   : 이성재
+       날짜     : 2021.09.28
+       param    : v : 클릭한 뷰
+       why      : 도착지 주변의 주차장을 안내해주기 위해 만들었습니다.
+    */
+
+    public void enterParkingLot(View v) { // 출발지 검색화면으로 이동
+
+        if(checkingAddress == true){
+            Intent it = new Intent(this, ParkingLotList.class);
+
+            View parkingLotListButton = findViewById(R.id.parkingLotListButton);
+            int tag =  Integer.parseInt(parkingLotListButton.getTag().toString()); // 태그로 어디에서 왔는지 구분하기 위해 사용
+
+            it.putExtra("it_tag",tag); // 2번태그
+
+            it.putExtra("departureAddress",departureAddress);
+            it.putExtra("departureLatitude", latitude); // 도착지 위도
+            it.putExtra("departureLongitude", longitude); // 도착지 경도
+
+            it.putExtra("destinationAddress", destinationAddress); // 도착지명
+            it.putExtra("destinationLatitude", latitude2); // 도착지 위도
+            it.putExtra("destinationLongitude", longitude2); // 도착지 경도
+
+            startActivity(it);
+        }else if (checkingAddress == false){
+            Toast.makeText(this,"출발지나 도착지가 잘못 설정 되었습니다." ,Toast.LENGTH_LONG).show();
+        }
+
     }
 
      /*
@@ -521,7 +530,7 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
             } catch (SAXException e) {
                 e.printStackTrace();
             } catch (NullPointerException e) {
-                new POIPointAsynTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, "을지로입구", "서울역");
+
             }
             return null;
         }
@@ -558,7 +567,7 @@ public class SearchResult extends AppCompatActivity implements TMapGpsManager.on
 
                 TMapPolyLine tMapPolyLine = new TMapData().findPathData(tMapPointStart, tMapPointEnd);
                 // 경로를 만드는 tMapPolyLine 객체 생성과 출발지와 도착지 설정
-                tMapPolyLine.setLineColor(Color.RED); // 경로 색상
+                tMapPolyLine.setLineColor(Color.BLUE); // 경로 색상
                 tMapPolyLine.setLineWidth(1); // 경로 선의 두께
                 TmapViews[0].addTMapPolyLine("Line1", tMapPolyLine); // 경로를 그린다
 //                    TmapViews[0].addTMapPath(tMapPolyLine); // 이거 안 쓰면 밑에 아이콘 사용 불가

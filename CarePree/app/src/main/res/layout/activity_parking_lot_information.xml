@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:visibility="visible"
     android:weightSum="10"
@@ -33,7 +34,8 @@
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
-                android:text="인근주차장 정보"
+                android:text="주차장 정보"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 tools:textStyle="bold" />
         </LinearLayout>
@@ -46,12 +48,717 @@
         android:layout_weight="8">
 
         <LinearLayout
-            android:id="@+id/information"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="8"
             android:orientation="vertical"
-            tools:tag="03" />
+            tools:tag="03">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="주차장 이름" />
+
+                <TextView
+                    android:id="@+id/parkingText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="주차장 구분" />
+
+                <TextView
+                    android:id="@+id/parkingText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="주차장 유형" />
+
+                <TextView
+                    android:id="@+id/parkingText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="도로명 주소" />
+
+                <TextView
+                    android:id="@+id/parkingText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="주차 구획수"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="급지 구분" />
+
+                <TextView
+                    android:id="@+id/parkingText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="부제시행구분" />
+
+                <TextView
+                    android:id="@+id/parkingText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="운영요일"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="평일운영시작시각"
+                    android:textColor="#0027FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="평일운영종료시각"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="토요일운영시작시각"
+                    android:textColor="#0027FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="토요일운영종료시각"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="공휴일운영시작시각"
+                    android:textColor="#0027FF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="공휴일운영종료시각"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="요금정보"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="주차기본시간"
+                    android:textColor="#2196F3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="주차기본요금"
+                    android:textColor="#673AB7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="추가단위시간"
+                    android:textColor="#2196F3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="추가단위요금"
+                    android:textColor="#673AB7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="1일주차권요금적용시간"
+                    android:textColor="#2196F3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="1일주차권요금"
+                    android:textColor="#673AB7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="월정기권요금"
+                    android:textColor="#673AB7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parkingText22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="결제방법" />
+
+                <TextView
+                    android:id="@+id/parkingText23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="특기사항" />
+
+                <TextView
+                    android:id="@+id/parkingText24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="관리기관명" />
+
+                <TextView
+                    android:id="@+id/parkingText25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                tools:tag="03">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="전화번호" />
+
+                <TextView
+                    android:id="@+id/parkingText26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="TextView" />
+
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
     <LinearLayout
@@ -63,7 +770,24 @@
         android:orientation="horizontal"
         android:paddingTop="6dp"
         android:paddingBottom="10dp"
-        android:weightSum="3">
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="enterBoard"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/favorites_btn"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:layout_weight="0"
+                android:onClick="enterBoard"
+                app:srcCompat="@drawable/board" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,9 +802,7 @@
                 android:layout_width="54dp"
                 android:layout_height="35dp"
                 android:layout_weight="0"
-                android:onClick="enterFavorites"
-                app:srcCompat="@drawable/ic_favorites"
-                tools:tint="#808080" />
+                app:srcCompat="@drawable/chatting" />
         </LinearLayout>
 
         <LinearLayout

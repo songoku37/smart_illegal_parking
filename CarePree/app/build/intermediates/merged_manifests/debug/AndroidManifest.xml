@@ -35,13 +35,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.CarePree"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.carepree.SplashActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.example.carepree.TmapNavi" />
         <activity android:name="com.example.carepree.DestinationSearchListFrom" />
         <activity android:name="com.example.carepree.DepartureSearchList" />
@@ -51,7 +44,17 @@
         <activity android:name="com.example.carepree.NearParkingLotMain" />
         <activity android:name="com.example.carepree.ParkingLotList" />
         <activity android:name="com.example.carepree.ParkingLotInformation" />
-        <activity android:name="com.example.carepree.MainActivity" />
+        <activity android:name="com.example.carepree.Board" />
+        <activity android:name="com.example.carepree.PostPage" />
+        <activity android:name="com.example.carepree.PostWriting" />
+        <activity android:name="com.example.carepree.PostEditing" />
+        <activity android:name="com.example.carepree.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

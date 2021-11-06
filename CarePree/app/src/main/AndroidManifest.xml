@@ -21,13 +21,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarePree"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".TmapNavi"/>
         <activity android:name=".DestinationSearchListFrom" />
         <activity android:name=".DepartureSearchList" />
@@ -37,7 +30,17 @@
         <activity android:name=".NearParkingLotMain" />
         <activity android:name=".ParkingLotList" />
         <activity android:name=".ParkingLotInformation" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".Board"/>
+        <activity android:name=".PostPage"/>
+        <activity android:name=".PostWriting"/>
+        <activity android:name=".PostEditing"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
