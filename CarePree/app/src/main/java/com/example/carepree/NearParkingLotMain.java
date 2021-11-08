@@ -174,6 +174,21 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
         startActivity(it);
     }
 
+    /*
+       함수명   : enterMain
+       간략     : 채팅방으로 이동
+       상세     : 채팅방으로 이동하기 위한 onClick
+       작성자   : 신희빈
+       날짜     : 2021.11.08
+       param    : View (클릭한 View객체)
+       why      : 메인페이지로 이동하기 위해 만들었습니다.
+    */
+
+    public void enterChat(View v){ // 메인으로 이동
+        Intent it = new Intent(this,ChatActivity.class);
+        startActivity(it);
+    }
+
      /*
         함수명   : enterSettings
         간략     : 설정 페이지로 이동

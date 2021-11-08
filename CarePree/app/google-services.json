@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "390128619012",
+    "firebase_url": "https://carepree-f400a-default-rtdb.firebaseio.com",
+    "project_id": "carepree-f400a",
+    "storage_bucket": "carepree-f400a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390128619012:android:d091e0448532de6cde2f51",
+        "android_client_info": {
+          "package_name": "com.example.carepree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390128619012-dlfitmtbmop18qghgl7pltbrunqb8997.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carepree",
+            "certificate_hash": "36f2a85559ba4b8de0adc5cdad5579da2ea25cc6"
+          }
+        },
+        {
+          "client_id": "390128619012-m72pt0buklnuht05u8fbb339m4ilr7ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQhfnZvBPstzpNC-f1YlC8E0_x4UxFJWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390128619012-m72pt0buklnuht05u8fbb339m4ilr7ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

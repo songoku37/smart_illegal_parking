@@ -22,6 +22,8 @@
         android:theme="@style/Theme.CarePree"
         android:usesCleartextTraffic="true">
         <activity android:name=".TmapNavi"/>
+        <activity android:name=".ChatActivity" android:theme="@style/Theme.Chat"/>
+        <activity android:name=".User" android:theme="@style/Theme.Chat.NoActionbar"/>
         <activity android:name=".DestinationSearchListFrom" />
         <activity android:name=".DepartureSearchList" />
         <activity android:name=".Settings" />
