@@ -29,10 +29,23 @@
         <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_tmap_navi.xml" value="0.4901041666666667" />
         <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_writepost.xml" value="0.4901041666666667" />
         <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.50625" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_board.xml" value="0.2046875" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_departure_search_list.xml" value="0.2046875" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_destination_search_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_editpost.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_near_parking_lot_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_parking_lot_information.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_postpage.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_search_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_settings.xml" value="0.36614583333333334" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_signup.xml" value="0.2046875" />
+        <entry key="..\:/parking git/smart_illegal_parking/CarePree/app/src/main/res/layout/activity_tmap_navi.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -24,6 +24,7 @@ public class Login extends AppCompatActivity {
     private Button buttonLogIn;
     private Button buttonSignUp;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +62,7 @@ public class Login extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
-                    Intent intent = new Intent(Login.this, Board.class);
+                    Intent intent = new Intent(Login.this, NearParkingLotMain.class);
                     startActivity(intent);
                     finish();
                 } else {
@@ -79,6 +80,7 @@ public class Login extends AppCompatActivity {
                             // 로그인 성공
                             Toast.makeText(Login.this, "로그인 성공", Toast.LENGTH_SHORT).show();
                             firebaseAuth.addAuthStateListener(firebaseAuthListener);
+
                         } else {
                             // 로그인 실패
                             Toast.makeText(Login.this, "아이디 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();

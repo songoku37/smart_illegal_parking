@@ -14,15 +14,13 @@ com/example/carepree/ParkingLotList.java
  com.example.carepree.ParkingLotList$MakingViewsAsync
  com.example.carepree.ParkingLotList$NewRunnable
  com.example.carepree.ParkingLotList$ParkingListAsync
-com/example/carepree/MainActivity.java
- com.example.carepree.MainActivity
- com.example.carepree.MainActivity$1
-com/example/carepree/Login.java
- com.example.carepree.Login
- com.example.carepree.Login$1
- com.example.carepree.Login$2
- com.example.carepree.Login$3
- com.example.carepree.Login$4
+com/example/carepree/Signup.java
+ com.example.carepree.Signup
+ com.example.carepree.Signup$1
+ com.example.carepree.Signup$2
+com/example/carepree/NearParkingLotMain.java
+ com.example.carepree.NearParkingLotMain
+ com.example.carepree.NearParkingLotMain$GettingCurrentPOI
 com/example/carepree/TmapNavi.java
  com.example.carepree.TmapNavi
 com/example/carepree/PostWriting.java
@@ -50,10 +48,12 @@ com/example/carepree/BuildConfig.java
  com.example.carepree.BuildConfig
 com/example/carepree/Settings.java
  com.example.carepree.Settings
-com/example/carepree/NearParkingLotMain.java
- com.example.carepree.NearParkingLotMain
- com.example.carepree.NearParkingLotMain$GettingCurrentPOI
-com/example/carepree/Signup.java
- com.example.carepree.Signup
- com.example.carepree.Signup$1
- com.example.carepree.Signup$2
+com/example/carepree/MainActivity.java
+ com.example.carepree.MainActivity
+ com.example.carepree.MainActivity$1
+com/example/carepree/Login.java
+ com.example.carepree.Login
+ com.example.carepree.Login$1
+ com.example.carepree.Login$2
+ com.example.carepree.Login$3
+ com.example.carepree.Login$4

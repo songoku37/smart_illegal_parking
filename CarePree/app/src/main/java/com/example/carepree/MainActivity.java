@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent main = new Intent(MainActivity.this, NearParkingLotMain.class);
+                Intent main = new Intent(MainActivity.this, Login.class);
                 startActivity(main);
                 finish();
             }
