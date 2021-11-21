@@ -1,5 +1,7 @@
 com/example/carepree/NearbyParkingLotSetterGetter.java
  com.example.carepree.NearbyParkingLotSetterGetter
+com/example/carepree/ChatAdapter.java
+ com.example.carepree.ChatAdapter
 com/example/carepree/DestinationSearchListFrom.java
  com.example.carepree.DestinationSearchListFrom
 com/example/carepree/PostPage.java
@@ -17,6 +19,9 @@ com/example/carepree/ParkingLotList.java
 com/example/carepree/MainActivity.java
  com.example.carepree.MainActivity
  com.example.carepree.MainActivity$1
+com/example/carepree/ChatActivity.java
+ com.example.carepree.ChatActivity
+ com.example.carepree.ChatActivity$1
 com/example/carepree/Login.java
  com.example.carepree.Login
  com.example.carepree.Login$1
@@ -25,6 +30,8 @@ com/example/carepree/Login.java
  com.example.carepree.Login$4
 com/example/carepree/TmapNavi.java
  com.example.carepree.TmapNavi
+com/example/carepree/ChatData.java
+ com.example.carepree.ChatData
 com/example/carepree/PostWriting.java
  com.example.carepree.PostWriting
 com/example/carepree/Board.java
@@ -33,8 +40,12 @@ com/example/carepree/ParkingLotInformation.java
  com.example.carepree.ParkingLotInformation
 com/example/carepree/SearchList.java
  com.example.carepree.SearchList
+com/example/carepree/MessageItem.java
+ com.example.carepree.MessageItem
 com/example/carepree/PostEditing.java
  com.example.carepree.PostEditing
+com/example/carepree/G.java
+ com.example.carepree.G
 com/example/carepree/SearchResult.java
  com.example.carepree.SearchResult
  com.example.carepree.SearchResult$BridgePointAsynTask
@@ -57,3 +68,7 @@ com/example/carepree/Signup.java
  com.example.carepree.Signup
  com.example.carepree.Signup$1
  com.example.carepree.Signup$2
+com/example/carepree/User.java
+ com.example.carepree.User
+ com.example.carepree.User$1
+ com.example.carepree.User$1$1

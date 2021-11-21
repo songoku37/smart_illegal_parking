@@ -29,10 +29,12 @@
         <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_tmap_navi.xml" value="0.4901041666666667" />
         <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/layout/activity_writepost.xml" value="0.4901041666666667" />
         <entry key="..\:/Users/JUNHO/AndroidStudioProjects/CarePree/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.50625" />
+        <entry key="..\:/Users/qltyv/Downloads/smart_illegal_parking-dev-chatting/CarePree/app/src/main/res/layout/activity_login.xml" value="0.2046875" />
+        <entry key="..\:/Users/qltyv/Downloads/smart_illegal_parking-dev-chatting/CarePree/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

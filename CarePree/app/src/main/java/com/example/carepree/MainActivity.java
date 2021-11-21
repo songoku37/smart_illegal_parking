@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent main = new Intent(MainActivity.this, NearParkingLotMain.class);
+                Intent main = new Intent(MainActivity.this, Login.class);
                 startActivity(main);
                 finish();
             }

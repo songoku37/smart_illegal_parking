@@ -232,6 +232,10 @@ attr chipSurfaceColor
 attr circleCrop
 attr circleRadius
 attr circularProgressIndicatorStyle
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clickAction
 attr clockFaceBackgroundColor
 attr clockHandColor
@@ -1022,6 +1026,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1290,6 +1298,8 @@ dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1689,6 +1699,9 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back_et_mymsgbox
+drawable back_et_name
+drawable back_et_othermsgbox
 drawable board
 drawable border_bottom
 drawable borderline
@@ -1726,6 +1739,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable et_name_cursor
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_change
@@ -1884,6 +1898,11 @@ id beginning
 id blocking
 id bottom
 id bounce
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id btn_join
 id btn_login
 id btn_signup
@@ -1898,6 +1917,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chat_btn
 id checkbox
 id checked
 id chip
@@ -1966,6 +1986,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id et
+id et_name
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1983,6 +2005,7 @@ id forever
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -2010,6 +2033,8 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv
+id iv_profile
 id jumpToEnd
 id jumpToStart
 id labelGroup
@@ -2025,6 +2050,7 @@ id linear
 id linearLayout
 id listMode
 id list_item
+id listview
 id location_btn
 id main_btn
 id map
@@ -2264,6 +2290,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_msg
+id tv_name
+id tv_time
 id unchecked
 id uniform
 id unlabeled
@@ -2343,6 +2372,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_board
+layout activity_char
 layout activity_departure_search_list
 layout activity_destination_search_list
 layout activity_editpost
@@ -2357,7 +2387,10 @@ layout activity_search_result
 layout activity_settings
 layout activity_signup
 layout activity_tmap_navi
+layout activity_user
 layout activity_writepost
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2416,12 +2449,14 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout my_msgbox
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout other_msgbox
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2504,10 +2539,17 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string input_parking_lot_name
@@ -2571,6 +2613,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_near_parking_lot_main
@@ -2988,6 +3031,8 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CarePree
+style Theme_Chat
+style Theme_Chat_NoActionbar
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -3322,6 +3367,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

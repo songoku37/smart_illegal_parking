@@ -1,262 +1,294 @@
 [
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_near_parking_lot_main.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_near_parking_lot_main.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_fire_truck_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\fire_truck_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layout_background.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\layout_background.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parking_lot_list.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_parking_lot_list.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_bridge_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\bridge_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_char.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_char.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chatting.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\chatting.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_my_page_logo_img.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable-v24\\my_page_logo_img.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_et_name.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\back_et_name.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape2.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\shape2.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_board.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_board.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_radius.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\radius.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_name_cursor.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\et_name_cursor.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_pedestrian_priority_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\pedestrian_priority_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_list.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_search_list.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_start.JPG.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\start.JPG"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border_bottom.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\border_bottom.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_school_zone_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\school_zone_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_searchglass.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_searchglass.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_my_page_logo_img.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable-v24\\my_page_logo_img.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_fire_truck_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\fire_truck_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_settings.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_filter.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_filter.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_main.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_main.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_searchglass.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_searchglass.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tmap_navi.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable-v24\\tmap_navi.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_departure_search_list.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_departure_search_list.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_change.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_change.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_favorites.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_favorites.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_crosswalk_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\crosswalk_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tmap_navi.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_tmap_navi.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_crosswalk_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\crosswalk_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_pedestrian_priority_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\pedestrian_priority_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parking_lot_list.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_parking_lot_list.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_signup.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_editpost.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_editpost.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img.jpg.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\img.jpg"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_getdirections.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_getdirections.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_result.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_search_result.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_firefighting_water_facility_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\firefighting_water_facility_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_postpage.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_postpage.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_only_pedestrian_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\only_pedestrian_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_logo.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable-v24\\ic_logo.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chatting.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\chatting.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_writepost.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_writepost.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_et_mymsgbox.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\back_et_mymsgbox.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_getdirections.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_getdirections.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_board.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\board.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\font_allerta.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\font\\allerta.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_result.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_search_result.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_settings.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tmap_navi.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable-v24\\tmap_navi.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\font_font.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\font\\font.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_filter.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_filter.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_firefighting_water_facility_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\firefighting_water_facility_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_change.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_change.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_radius.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\radius.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_destination_search_list.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_destination_search_list.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_destination_search_list.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_destination_search_list.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\font_cookierunblack.ttf.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\font\\cookierunblack.ttf"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_board.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\board.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_main.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_main.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_borderline.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\borderline.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\splash.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parking_lot_information.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_parking_lot_information.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_writepost.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_writepost.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape2.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\shape2.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img.jpg.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\img.jpg"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_bridge_json.txt.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\raw\\bridge_json.txt"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_marker.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable-v24\\marker.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\font_cookierunblack.ttf.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\font\\cookierunblack.ttf"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_start.JPG.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\start.JPG"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_user.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_parkinglotimg.jpg.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable-v24\\parkinglotimg.jpg"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_only_pedestrian_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\only_pedestrian_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_marker.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable-v24\\marker.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\raw_school_zone_json.txt.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\raw\\school_zone_json.txt"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_settings.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_departure_search_list.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_departure_search_list.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_postpage.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_postpage.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_other_msgbox.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\other_msgbox.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\splash.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_borderline.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\borderline.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_parking_lot_information.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_parking_lot_information.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_et_othermsgbox.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\back_et_othermsgbox.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search_list.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_search_list.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border_bottom.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\border_bottom.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_board.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_board.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_msgbox.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\my_msgbox.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_parkinglotimg.jpg.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\drawable-v24\\parkinglotimg.jpg"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_editpost.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_editpost.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tmap_navi.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_tmap_navi.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\font_font.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\font\\font.xml"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signup.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\layout\\activity_signup.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\font_allerta.xml.flat",
-        "source": "D:\\my_java_work\\smart_illegal_parking\\CarePree\\app\\src\\main\\res\\font\\allerta.xml"
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_near_parking_lot_main.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\layout\\activity_near_parking_lot_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_favorites.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layout_background.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\layout_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_logo.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\drawable-v24\\ic_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\qltyv\\Downloads\\smart_illegal_parking-dev-chatting\\CarePree\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     }
 ]

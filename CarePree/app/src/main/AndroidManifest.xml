@@ -36,6 +36,8 @@
         <activity android:name=".PostPage"/>
         <activity android:name=".PostWriting"/>
         <activity android:name=".PostEditing"/>
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
