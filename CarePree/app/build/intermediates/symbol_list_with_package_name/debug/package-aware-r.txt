@@ -3031,6 +3031,8 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CarePree
+style Theme_CarePree1
+style Theme_CarePree1_NoActionbar
 style Theme_Chat
 style Theme_Chat_NoActionbar
 style Theme_Design

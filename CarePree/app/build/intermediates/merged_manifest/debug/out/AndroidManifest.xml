@@ -41,10 +41,10 @@
         <activity android:name="com.example.carepree.TmapNavi" />
         <activity
             android:name="com.example.carepree.ChatActivity"
-            android:theme="@style/Theme.Chat" />
+            android:theme="@style/Theme.CarePree1" />
         <activity
             android:name="com.example.carepree.User"
-            android:theme="@style/Theme.Chat.NoActionbar" />
+            android:theme="@style/Theme.CarePree1.NoActionbar" />
         <activity android:name="com.example.carepree.DestinationSearchListFrom" />
         <activity android:name="com.example.carepree.DepartureSearchList" />
         <activity android:name="com.example.carepree.Settings" />

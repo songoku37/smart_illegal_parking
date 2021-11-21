@@ -47,7 +47,7 @@ public class ChatAdapter extends BaseAdapter {
         View itemView=null;
 
         //메세지가 내 메세지인지??
-        if(item.getName().equals(G.nickName)){
+        if(item.getName() == (G.nickName)){
             itemView= layoutInflater.inflate(R.layout.my_msgbox,viewGroup,false);
         }else{
             itemView= layoutInflater.inflate(R.layout.other_msgbox,viewGroup,false);

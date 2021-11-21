@@ -185,7 +185,7 @@ public class NearParkingLotMain extends AppCompatActivity implements TMapGpsMana
     */
 
     public void enterChat(View v){ // 메인으로 이동
-        Intent it = new Intent(this,ChatActivity.class);
+        Intent it = new Intent(this,User.class);
         startActivity(it);
     }
 
